@@ -1,0 +1,396 @@
+ERROR - 2023-12-20 10:25:16 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/loergrou/app/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'loergrou_loergr...', Object(SensitiveParameterValue), 'loergrou_loergr...', 3306, '', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/loergrou/app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/loergrou/app/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/loergrou/app/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 /home/loergrou/app/app/Models/M_selection.php(14): CodeIgniter\BaseModel->first()
+#7 /home/loergrou/app/app/Controllers/Apply.php(29): App\Models\M_selection->getFormByUserId('200')
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->index()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/loergrou/app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/loergrou/app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/loergrou/app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/loergrou/app/system/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/loergrou/app/system/BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 /home/loergrou/app/app/Models/M_selection.php(14): CodeIgniter\BaseModel->first()
+#6 /home/loergrou/app/app/Controllers/Apply.php(29): App\Models\M_selection->getFormByUserId('200')
+#7 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->index()
+#8 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#9 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-20 10:25:16 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `form_pendaftaran`
+WHERE `id_pengguna` = :id_pengguna:
+ORDER BY `waktu_apply` DESC
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH/Models/M_selection.php(14): CodeIgniter\BaseModel->first()
+ 6 APPPATH/Controllers/Apply.php(29): App\Models\M_selection->getFormByUserId('200')
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 03:25:17 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /home/loergrou/app/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'loergrou_loergr...', Object(SensitiveParameterValue), 'loergrou_loergr...', 3306, '', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /home/loergrou/app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /home/loergrou/app/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/loergrou/app/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /home/loergrou/app/app/Models/M_career.php(25): CodeIgniter\BaseModel->findAll()
+#7 /home/loergrou/app/app/Controllers/Career.php(11): App\Models\M_career->get_lowongan_berjalan()
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Career->index()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /home/loergrou/app/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /home/loergrou/app/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/loergrou/app/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /home/loergrou/app/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /home/loergrou/app/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /home/loergrou/app/app/Models/M_career.php(25): CodeIgniter\BaseModel->findAll()
+#6 /home/loergrou/app/app/Controllers/Career.php(11): App\Models\M_career->get_lowongan_berjalan()
+#7 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Career->index()
+#8 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+#9 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-12-20 03:25:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lowongan_pekerjaan`
+WHERE `waktu_mulai` <= :waktu_mulai:
+AND `waktu_akhir` >= :waktu_akhir:', [...], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Models/M_career.php(25): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH/Controllers/Career.php(11): App\Models\M_career->get_lowongan_berjalan()
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Career->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Career))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:33:02 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 10:33:06 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 10:45:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 10:45:33 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `sertifikat_kompetensi`, `berkas_pendukung`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :sertifikat_kompetensi:, :berkas_pendukung:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 11:29:07 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 11:29:07 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 11:29:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 11:29:39 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 13:45:41 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 13:45:41 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `skck`, `sertifikat_kompetensi`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :skck:, :sertifikat_kompetensi:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 13:45:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 13:45:58 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `skck`, `sertifikat_kompetensi`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :skck:, :sertifikat_kompetensi:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 13:51:28 --> mysqli_sql_exception: Column 'id_pengguna' cannot be null in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 13:51:28 --> Column 'id_pengguna' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `sertifikat_kompetensi`, `berkas_pendukung`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :sertifikat_kompetensi:, :berkas_pendukung:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 13:52:03 --> mysqli_sql_exception: Column 'id_pengguna' cannot be null in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 13:52:03 --> Column 'id_pengguna' cannot be null
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `sertifikat_kompetensi`, `berkas_pendukung`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :sertifikat_kompetensi:, :berkas_pendukung:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 07:54:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-12-20 07:54:10 --> 220-tamanan.idweb.host ESMTP Exim 4.96.2 #2 Wed, 20 Dec 2023 14:53:50 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-tamanan.idweb.host Hello loergroup.com [202.52.146.154]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+from: 250 OK
+
+to: 451 Temporary local problem - please try later
+
+The following SMTP error was encountered: 451 Temporary local problem - please try later
+
+quit: 221 tamanan.idweb.host closing connection
+
+CRITICAL - 2023-12-20 17:18:38 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 17:24:05 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 17:25:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 17:25:06 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `skck`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :skck:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 17:36:20 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-20 19:33:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`)) in /home/loergrou/app/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /home/loergrou/app/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `fo...', 0)
+#1 /home/loergrou/app/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fo...')
+#2 /home/loergrou/app/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fo...')
+#3 /home/loergrou/app/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fo...', Array, false)
+#4 /home/loergrou/app/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/loergrou/app/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /home/loergrou/app/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /home/loergrou/app/app/Controllers/Apply.php(123): CodeIgniter\Model->insert(Array)
+#8 /home/loergrou/app/system/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+#9 /home/loergrou/app/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+#10 /home/loergrou/app/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/loergrou/public_html/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-20 19:33:05 --> Cannot add or update a child row: a foreign key constraint fails (`loergrou_loergroup`.`form_pendaftaran`, CONSTRAINT `form_pendaftaran_ibfk_3` FOREIGN KEY (`id_loker`) REFERENCES `lowongan_pekerjaan` (`id_loker`))
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `form_pendaftaran` (`id_pengguna`, `nama`, `email`, `jenkel`, `tempat_lahir`, `tanggal_lahir`, `pend`, `no_telp`, `no_hp`, `alamat`, `linkedin`, `id_loker`, `waktu_apply`, `id_form`, `surat_lamaran`, `cv`, `ktp`, `ijazah`, `skck`, `berkas_pendukung`) VALUES (:id_pengguna:, :nama:, :email:, :jenkel:, :tempat_lahir:, :tanggal_lahir:, :pend:, :no_telp:, :no_hp:, :alamat:, :linkedin:, :id_loker:, :waktu_apply:, :id_form:, :surat_lamaran:, :cv:, :ktp:, :ijazah:, :skck:, :berkas_pendukung:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Apply.php(123): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 22:34:07 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 22:34:10 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-20 22:35:58 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

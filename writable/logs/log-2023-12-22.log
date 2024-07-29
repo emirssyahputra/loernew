@@ -1,0 +1,56 @@
+CRITICAL - 2023-12-22 06:58:31 --> Trying to access array offset on value of type null
+in APPPATH/Views/admin/v_detail_pendaftar.php on line 139.
+ 1 APPPATH/Views/admin/v_detail_pendaftar.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php', 139)
+ 2 SYSTEMPATH/View/View.php(228): include('/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_detail_pendaftar', [], true)
+ 5 APPPATH/Controllers/DetailPendaftar.php(17): view('admin/v_detail_pendaftar', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->index('downloadFile')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 06:58:36 --> Trying to access array offset on value of type null
+in APPPATH/Views/admin/v_detail_pendaftar.php on line 139.
+ 1 APPPATH/Views/admin/v_detail_pendaftar.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php', 139)
+ 2 SYSTEMPATH/View/View.php(228): include('/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_detail_pendaftar', [], true)
+ 5 APPPATH/Controllers/DetailPendaftar.php(17): view('admin/v_detail_pendaftar', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->index('downloadFile')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 06:58:50 --> Trying to access array offset on value of type null
+in APPPATH/Views/admin/v_detail_pendaftar.php on line 139.
+ 1 APPPATH/Views/admin/v_detail_pendaftar.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php', 139)
+ 2 SYSTEMPATH/View/View.php(228): include('/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_detail_pendaftar', [], true)
+ 5 APPPATH/Controllers/DetailPendaftar.php(17): view('admin/v_detail_pendaftar', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->index('downloadFile')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 07:07:24 --> Trying to access array offset on value of type null
+in APPPATH/Views/admin/v_detail_pendaftar.php on line 139.
+ 1 APPPATH/Views/admin/v_detail_pendaftar.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', '/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php', 139)
+ 2 SYSTEMPATH/View/View.php(228): include('/home/loergrou/app/app/Views/admin/v_detail_pendaftar.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/v_detail_pendaftar', [], true)
+ 5 APPPATH/Controllers/DetailPendaftar.php(17): view('admin/v_detail_pendaftar', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->index('downloadFile')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 15:06:14 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-22 15:06:15 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

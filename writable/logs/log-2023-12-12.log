@@ -1,0 +1,120 @@
+CRITICAL - 2023-12-12 15:32:58 --> File not found: "/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395152_a7fc0a9162455c652017.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395152_a7fc0a9162455c652017.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:33:20 --> File not found: "/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395152_a7fc0a9162455c652017.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395152_a7fc0a9162455c652017.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:33:35 --> File not found: "/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395152_a7fc0a9162455c652017.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395152_a7fc0a9162455c652017.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395152_a7fc0a9162455c652017.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:35:31 --> File not found: "/home/loergrou/public_html/public/doc/1702395152_a488310ed77da46db2d6.pdf"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395152_a488310ed77da46db2d6.pdf')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395152_a488310ed77da46db2d6.pdf', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395152_a488310ed77da46db2d6.pdf')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395152_a488310ed77da46db2d6.pdf', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395152_a488310ed77da46db2d6.pdf')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:39:18 --> File not found: "/home/loergrou/public_html/public/doc/1702395152_e8f3c26f8b3179faab36.pdf"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395152_e8f3c26f8b3179faab36.pdf')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395152_e8f3c26f8b3179faab36.pdf', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395152_e8f3c26f8b3179faab36.pdf')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395152_e8f3c26f8b3179faab36.pdf', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395152_e8f3c26f8b3179faab36.pdf')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:43:48 --> File not found: "/home/loergrou/public_html/public/doc/1702395815_b10fd1fee7d88c36b058.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702395815_b10fd1fee7d88c36b058.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702395815_b10fd1fee7d88c36b058.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702395815_b10fd1fee7d88c36b058.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702395815_b10fd1fee7d88c36b058.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702395815_b10fd1fee7d88c36b058.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:47:19 --> File not found: "/home/loergrou/public_html/public/doc/1702396025_2dbc2ba9f5f3639acfdf.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702396025_2dbc2ba9f5f3639acfdf.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702396025_2dbc2ba9f5f3639acfdf.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702396025_2dbc2ba9f5f3639acfdf.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702396025_2dbc2ba9f5f3639acfdf.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396025_2dbc2ba9f5f3639acfdf.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:51:32 --> File not found: "/home/loergrou/public_html/public/doc/1702396277_28aa1c7d7cec23d3a8fe.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/public_html/public/doc/1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/public_html/public/doc/1702396277_28aa1c7d7cec23d3a8fe.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/public_html/public/doc/1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702396277_28aa1c7d7cec23d3a8fe.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:52:42 --> File not found: "/home/loergrou/app/doc/1702396277_28aa1c7d7cec23d3a8fe.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/app/doc/1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/app/doc/1702396277_28aa1c7d7cec23d3a8fe.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/app/doc/1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('1702396277_28aa1c7d7cec23d3a8fe.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:53:23 --> File not found: "/home/loergrou/app/public/doc1702396277_28aa1c7d7cec23d3a8fe.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/app/public/doc1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/app/public/doc1702396277_28aa1c7d7cec23d3a8fe.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/app/public/doc1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('doc1702396277_28aa1c7d7cec23d3a8fe.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396277_28aa1c7d7cec23d3a8fe.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:53:33 --> File not found: "/home/loergrou/app/public/doc1702396277_b2d65ca5ff583b0fa06c.pdf"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/app/public/doc1702396277_b2d65ca5ff583b0fa06c.pdf')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/app/public/doc1702396277_b2d65ca5ff583b0fa06c.pdf', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/app/public/doc1702396277_b2d65ca5ff583b0fa06c.pdf')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('doc1702396277_b2d65ca5ff583b0fa06c.pdf', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396277_b2d65ca5ff583b0fa06c.pdf')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-12 15:55:15 --> File not found: "/home/loergrou/app/public/doc1702396505_d45ca82e68533a2691d6.docx"
+in SYSTEMPATH/Files/File.php on line 49.
+ 1 SYSTEMPATH/Files/File.php(49): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('/home/loergrou/app/public/doc1702396505_d45ca82e68533a2691d6.docx')
+ 2 SYSTEMPATH/HTTP/DownloadResponse.php(104): CodeIgniter\Files\File->__construct('/home/loergrou/app/public/doc1702396505_d45ca82e68533a2691d6.docx', true)
+ 3 SYSTEMPATH/HTTP/ResponseTrait.php(806): CodeIgniter\HTTP\DownloadResponse->setFilePath('/home/loergrou/app/public/doc1702396505_d45ca82e68533a2691d6.docx')
+ 4 APPPATH/Controllers/DetailPendaftar.php(31): CodeIgniter\HTTP\Response->download('doc1702396505_d45ca82e68533a2691d6.docx', null)
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\DetailPendaftar->downloadFile('1702396505_d45ca82e68533a2691d6.docx')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailPendaftar))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

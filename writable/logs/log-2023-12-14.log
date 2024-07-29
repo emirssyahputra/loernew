@@ -1,0 +1,33 @@
+ERROR - 2023-12-14 09:22:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-12-14 09:22:42 --> 220-tamanan.idweb.host ESMTP Exim 4.96.2 #2 Thu, 14 Dec 2023 16:22:21 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-tamanan.idweb.host Hello loergroup.com [202.52.146.154]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+from: 250 OK
+
+to: 451 Temporary local problem - please try later
+
+The following SMTP error was encountered: 451 Temporary local problem - please try later
+
+quit: 221 tamanan.idweb.host closing connection
+
+CRITICAL - 2023-12-14 16:26:55 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-14 16:28:12 --> Call to a member function isValid() on null
+in APPPATH/Controllers/Apply.php on line 84.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Apply->daftar()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Apply))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

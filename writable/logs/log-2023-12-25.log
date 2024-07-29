@@ -1,0 +1,7 @@
+CRITICAL - 2023-12-25 09:05:56 --> Undefined variable $data
+in APPPATH/Controllers/Verif.php on line 54.
+ 1 APPPATH/Controllers/Verif.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', '/home/loergrou/app/app/Controllers/Verif.php', 54)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Verif->resetOtp()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Verif))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

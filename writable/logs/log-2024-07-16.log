@@ -1,0 +1,30 @@
+ERROR - 2024-07-16 12:34:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-16 12:34:42 --> 220-mailserv3.idweb.host ESMTP Exim 4.97.1 #2 Tue, 16 Jul 2024 19:34:38 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-mailserv3.idweb.host Hello tamanan.idweb.host [202.52.146.167]
+250-SIZE 44040192
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
+ERROR - 2024-07-16 12:39:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-07-16 12:39:50 --> 220-mailserv3.idweb.host ESMTP Exim 4.97.1 #2 Tue, 16 Jul 2024 19:39:48 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-mailserv3.idweb.host Hello tamanan.idweb.host [202.52.146.167]
+250-SIZE 44040192
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+Failed to authenticate password. Error: 535 Incorrect authentication data
+
