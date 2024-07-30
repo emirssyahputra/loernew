@@ -39,6 +39,15 @@ class M_pendaftar extends Model
             ->first();
     }
 
+    public function get_pendaftar_by_status($status)
+    {
+        return $this->where('status_adm', $status)
+            ->orWhere('status_wwc', $status)
+            ->orWhere('status_uji', $status)
+            ->orWhere('status_akhir', $status)
+            ->findAll();
+    }
+
     public function updateStatus($where, $data)
     {
         return $this->update($where, $data);
