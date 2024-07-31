@@ -2,37 +2,23 @@
 <html lang="en">
 
 <head>
-
-    <!-- Basic Page Needs
-================================================== -->
     <meta charset="utf-8">
-    <title>Apply Career</title>
-
-    <!-- Mobile Specific Metas
-================================================== -->
+    <title>Partnership</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Construction Html5 Template">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-
-    <!-- Favicon
-================================================== -->
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- CSS
-================================================== -->
-    <!-- Bootstrap -->
+    <!-- CSS -->
     <link rel="stylesheet" href="<?= base_url('plugins/bootstrap/bootstrap.min.css'); ?>">
-    <!-- FontAwesome -->
     <link rel="stylesheet" href="<?= base_url('plugins/fontawesome/css/all.min.css'); ?>">
-    <!-- Animation -->
     <link rel="stylesheet" href="<?= base_url('plugins/animate-css/animate.css'); ?>">
-    <!-- slick Carousel -->
     <link rel="stylesheet" href="<?= base_url('plugins/slick/slick.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('plugins/slick/slick-theme.css'); ?>">
-    <!-- Colorbox -->
     <link rel="stylesheet" href="<?= base_url('plugins/colorbox/colorbox.css'); ?>">
-    <!-- Template styles-->
     <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 </head>
 
@@ -55,7 +41,7 @@
                                     <a class="d-block" href="<?php echo site_url('/'); ?>">
                                         <img loading="lazy" src="<?= base_url('images/logo.png'); ?>" alt="Loer Group">
                                     </a>
-                                </div><!-- logo end -->
+                                </div>
 
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false"
@@ -80,148 +66,79 @@
                                 </div>
                             </nav>
                         </div>
-                        <!--/ Col end -->
                     </div>
-                    <!--/ Row end -->
                 </div>
-                <!--/ Container end -->
-
-            </div>
-            <!--/ Navigation end -->
+            </div>   
         </header>
-        <!--/ Header end -->
-
+        
         <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
             <div class="banner-text">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="banner-heading">
-                                <h1 class="banner-title">Apply Career</h1>
+                                <h1 class="banner-title" style="font-size: 42px;">Saya Tertarik Menjadi Partner</h1>
                             </div>
-                        </div><!-- Col end -->
-                    </div><!-- Row end -->
-                </div><!-- Container end -->
-            </div><!-- Banner text end -->
-        </div><!-- Banner area end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section id="registration" class="registration">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
+                    <div class="col-lg-7 mt-7 mt-lg-0">
                         <div class="registration-form">
-                            <form action="<?= site_url('apply/apply'); ?>" method="post" enctype="multipart/form-data">
+                            <form action="#" method="post" enctype="multipart/form-data">
+                                <h5 style="color: #000; margin-bottom: 15px;">Personal Information</h5>
+
                                 <div class="form-group">
-                                    <input type="hidden" class="form-control" name="id_loker"
-                                        value="<?php echo $id_loker; ?>">
+                                    <label for="email" class="required-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email@gmail.com" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="nama">Nama</label>
-                                    <input type="text" class="form-control" value="<?php echo $nama; ?>" readonly>
+                                    <label for="nama" class="required-label">Nama</label>
+                                    <input type="text" class="form-control" id="nama" name="Nama Lengkap" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="jenis-kelamin">Jenis Kelamin</label>
-                                    <select class="form-control" id="jenis-kelamin" name="jenkel" required>
-                                        <option value="">Pilih Jenis Kelamin</option>
-                                        <option value="Laki-laki">Laki-laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="pendidikan-terakhir">Pendidikan Terakhir</label>
-                                    <select class="form-control" id="pendidikan-terakhir" name="pend" required>
-                                        <option value="">Pilih Pendidikan Terakhir</option>
-                                        <option value="SLTA Sederajat">SLTA Sederajat</option>
-                                        <option value="D1">D1</option>
-                                        <option value="D2">D2</option>
-                                        <option value="D3">D3</option>
-                                        <option value="D4">D4</option>
-                                        <option value="S1">S1</option>
-                                        <option value="S2">S2</option>
-                                        <option value="S3">S3</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" value="<?php echo $email; ?>"
-                                        readonly>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="telepon">Nomor Telepon</label>
+                                    <label for="telepon" class="required-label">Nomor HP</label>
                                     <input type="tel" class="form-control" id="telepon" name="no_telp" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="alamat">Alamat</label>
-                                    <textarea class="form-control" id="alamat" name="alamat" rows="2"
-                                        required></textarea>
+                                    <label for="alamat" class="required-label">Alamat</label>
+                                    <textarea class="form-control" id="alamat" name="alamat" rows="2" required></textarea>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="linkedin">URL LinkedIn (Opsional)</label>
-                                    <input type="url" class="form-control" id="linkedin" name="linkedin"
-                                        value="https://" placeholder="mis: http://linkedin.com/in/username">
-                                </div>
-
-                                <p>Silahkan upload file dengan format PDF untuk semua lampiran dokumen di bawah.</p>
-                                <div class="form-group">
-                                    <label for="cv">KTP</label>
-                                    <input type="file" class="form-control-file" id="ktp" name="ktp" accept=".pdf"
-                                        required>
+                                    <label for="pekerjaan" class="required-label">Pekerjaan</label>
+                                    <input type="pekerjaan" class="form-control" id="pekerjaan" name="pekerjaan" required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="cv">Upload Curriculum Vitae (CV)</label>
-                                    <input type="file" class="form-control-file" id="cv" name="cv" accept=".pdf"
-                                        required>
+                                    <label for="info" class="required-label">Darimakanah anda mengetahui informasi mengenai kemitraan Kopi Loer?</label>
+                                    <textarea class="form-control" id="info" name="info" rows="4" required></textarea>
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="surat-lamaran">Upload Surat Lamaran</label>
-                                    <input type="file" class="form-control-file" id="surat-lamaran" name="surat_lamaran"
-                                        accept=".pdf" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="ijazah">Upload File Ijazah</label>
-                                    <input type="file" class="form-control-file" id="ijazah" name="ijazah" accept=".pdf"
-                                        required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="ijazah">SKCK</label>
-                                    <input type="file" class="form-control-file" id="skck" name="skck" accept=".pdf"
-                                        required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="ijazah">Packlaring</label>
-                                    <input type="file" class="form-control-file" id="packlaring" name="packlaring"
-                                        accept=".pdf" required>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="sertifikat">Upload File Sertifikat Kompetensi (Opsional)</label>
-                                    <input type="file" class="form-control-file" id="sertifikat"
-                                        name="sertifikat_kompetensi" accept=".pdf">
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="berkas-pendukung">Upload Berkas Pendukung Lainnya (Opsional)</label>
-                                    <input type="file" class="form-control-file" id="berkas-pendukung"
-                                        name="berkas-pendukung" accept=".pdf">
-                                </div>
-
-                                <div class="header-get-a-quote text-center my-2">
-                                    <button type="submit" class="btn btn-primary apply-button">Apply Now</button>
+                                <div class="header-get-a-quote d-flex justify-content-end my-2">
+                                    <button type="submit" class="btn btn-primary apply-button">KIRIM</button>
                                 </div>
 
                             </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 mt-5 mt-lg-0">
+                        <div id="page-slider" class="page-slider small-bg">
+                            <div class="item special-height" style="background-image:url(images/slider-partner/INFO.jpg); position: relative; min-height: 703px;">
+                                <div class="container">
+                                    <div class="box-slider-content">    
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -237,7 +154,7 @@
                             <a href="index.html">
                                 <img loading="lazy" class="footer-logo" src="images/footer-logo.png" alt="Constra">
                             </a>
-                        </div><!-- Col end -->
+                        </div>
 
                         <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Hubungi Kami</h3>
@@ -254,8 +171,8 @@
                                     <li><a href="https://id.linkedin.com/company/kopi-loer-group"
                                             aria-label="Linkedin"><i class="fab fa-linkedin"></i></a></li>
                                 </ul>
-                            </div><!-- Footer social end -->
-                        </div><!-- Col end -->
+                            </div>
+                        </div>
 
                         <div class="col-lg-2 col-md-6 mt-5 mt-lg-0 footer-widget">
                             <h3 class="widget-title">Brands</h3>
@@ -264,10 +181,10 @@
                               <p>Rumah Loer</p>
                               <p>KORA Coffee</p>
                             </ul>
-                        </div><!-- Col end -->
-                    </div><!-- Row end -->
-                </div><!-- Container end -->
-            </div><!-- Footer main end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="copyright">
                 <div class="container">
@@ -281,7 +198,7 @@
                                 </span>
                             </div>
                         </div>
-                    </div><!-- Row end -->
+                    </div>
 
                     <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
                         <button class="btn btn-primary" title="Back to Top">
@@ -289,38 +206,26 @@
                         </button>
                     </div>
 
-                </div><!-- Container end -->
-            </div><!-- Copyright end -->
-        </footer><!-- Footer end -->
+                </div>
+            </div>
+        </footer>
 
-
-        <!-- Javascript Files
-  ================================================== -->
-
-        <!-- initialize jQuery Library -->
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <!-- Javascript Files -->
         <script src="<?php echo base_url() . 'plugins/jQuery/jquery.min.js' ?>"></script>
-        <!-- Bootstrap jQuery -->
         <script src="<?php echo base_url() . 'plugins/bootstrap/bootstrap.min.js' ?>"></script>
-        <!-- Slick Carousel -->
         <script src="<?php echo base_url() . 'plugins/slick/slick.min.js' ?>"></script>
         <script src="<?php echo base_url() . 'plugins/slick/slick-animation.min.js' ?>"></script>
-        <!-- Color box -->
         <script src="<?php echo base_url() . 'plugins/colorbox/jquery.colorbox.js' ?>"></script>
-        <!-- shuffle -->
         <script src="<?php echo base_url() . 'plugins/shuffle/shuffle.min.js' ?>"></script>
-
-
+        <script src="<?php echo base_url() . 'js/script.js' ?>"></script>
         <!-- Google Map API Key-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
             defer></script>
         <!-- Google Map Plugin-->
         <script src="<?= base_url('plugins/google-map/map.js'); ?>" defer></script>
-
-        <!-- Template custom -->
-        <script src="<?php echo base_url() . 'js/script.js' ?>"></script>
-
-
-    </div><!-- Body inner end -->
+    </div>
 </body>
 
 </html>

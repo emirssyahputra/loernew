@@ -63,17 +63,19 @@
                 </button>
 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
-                  <ul class="nav navbar-nav ml-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="<?php echo site_url('/'); ?>">Home</a></li>
+                    <ul class="nav navbar-nav ml-auto align-items-center">
+                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('/'); ?>">Home</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Career'); ?>">Career</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Career'); ?>">Career</a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="<?php echo site_url('About'); ?>">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('About'); ?>">About</a></li>
 
-                    <li class="header-get-a-quote">
-                      <a class="btn btn-primary" href="<?php echo site_url('Login'); ?>">LOGIN</a>
-                    </li>
-                  </ul>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Partnership');?>">Partner</a></li>
+
+                        <li class="header-get-a-quote">
+                        <a class="btn btn-primary" href="<?php echo site_url('Login'); ?>">LOGIN</a>
+                        </li>
+                    </ul>
                 </div>
               </nav>
             </div>
