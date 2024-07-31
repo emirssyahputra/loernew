@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Tambah Data Outlet</title>
+  <title>Tambah Data FAQ</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="<?= base_url('vendors/font-awesome/css/font-awesome.min.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('vendors/feather/feather.css'); ?>">
@@ -20,51 +21,60 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="<?= base_url('images/logo aku-nobg-notext.png'); ?>">
   <!-- <link rel="shortcut icon" href="../../images/logo-mini.svg" /> -->
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </head>
 
 <body>
   <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
   <script>
-  // fungsi ketika user men scroll ke bawah 40 px maka tombol back to top akan muncul
-  window.onscroll = function() {scrollFunction()};
-  function scrollFunction() {
+    // fungsi ketika user men scroll ke bawah 40 px maka tombol back to top akan muncul
+    window.onscroll = function () { scrollFunction() };
+    function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById("myBtn").style.display = "block";
+        document.getElementById("myBtn").style.display = "block";
       } else {
-          document.getElementById("myBtn").style.display = "none";
+        document.getElementById("myBtn").style.display = "none";
       }
-  }
-  // fungsi ketika user meng klik tombol back to top maka halaman akan menscroll ke atas
-  function topFunction() {
+    }
+    // fungsi ketika user meng klik tombol back to top maka halaman akan menscroll ke atas
+    function topFunction() {
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
-  }
-   
-</script>  
+    }
+    tinymce.init({
+    selector: 'textarea#jobdesk, textarea#kualifikasi',
+    plugins: 'lists, link, autolink, autosave, code, preview, searchreplace, table, wordcount',
+    toolbar: 'undo redo | bold italic | bullist numlist | link | code | preview',
+    menubar: 'file edit view insert format tools table',
+  });
+  </script>
 
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="<?php echo site_url('Pengguna'); ?>"><img src="<?= base_url('images/logo aku-nobg-tex.png'); ?>" class="mr-2" alt="logo"/></a>
-        <a class="navbar-brand brand-logo-mini" href="<?php echo site_url('Pengguna'); ?>"><img src="<?= base_url('images/logo aku-nobg-notext.png'); ?>" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href="<?php echo site_url('Pengguna'); ?>"><img
+            src="<?= base_url('images/logo aku-nobg-tex.png'); ?>" class="mr-2" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="<?php echo site_url('Pengguna'); ?>"><img
+            src="<?= base_url('images/logo aku-nobg-notext.png'); ?>" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-            <span class="fa fa-navicon"></span>
+          <span class="fa fa-navicon"></span>
         </button>
-        
+
         <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
-            <a href="<?php echo site_url('Login/logout'); ?>" class="dropdown-item" onclick="return confirm('Yakin ingin logout?')">
-                <i class="fa fa-power-off text-primary"></i>Logout
+            <a href="<?php echo site_url('Login/logout'); ?>" class="dropdown-item"
+              onclick="return confirm('Yakin ingin logout?')">
+              <i class="fa fa-power-off text-primary"></i>Logout
             </a>
           </li>
         </ul>
 
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type a="button" data-toggle="offcanvas">
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type a="button"
+          data-toggle="offcanvas">
           <span class="fa fa-navicon"></span>
         </button>
       </div>
@@ -127,73 +137,29 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-                       
+
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Tambah Outlet</h4>
-                  <form class="forms-sample" method="POST" action="<?= site_url('Tambahoutlet/saveOutlet'); ?>">
+                  <h4 class="card-title">Tambah FAQ</h4>
+                  <form class="forms-sample" method="POST" action="<?= site_url('TambahFAQ/save'); ?>">
                     <div class="form-group">
-                      <label for="namaoutlet">Nama Outlet</label>
-                      <input type="text" class="form-control" id="outlet" name="nama" placeholder="Nama" required />
-                    </div>                  
-                    <div class="form-group">
-                      <label>Alamat</label>
-                      <textarea name="alamat" rows="1" class="form-control" placeholder="Alamat"></textarea>
+                      <label>Pertanyaan</label>
+                      <textarea name="ask" rows="7" class="form-control" placeholder="Pertanyaan"
+                        required></textarea>
                     </div>
-
                     <div class="form-group">
-                      <label for="hariRange">Rentang Hari</label>
-                      <div class="row">
-                          <div class="col">
-                              <select class="form-control" name="startDay" required>
-                                  <option value="Senin">Senin</option>
-                                  <option value="Selasa">Selasa</option>
-                                  <option value="Rabu">Rabu</option>
-                                  <option value="Kamis">Kamis</option>
-                                  <option value="Jumat">Jumat</option>
-                                  <option value="Sabtu">Sabtu</option>
-                                  <option value="Minggu">Minggu</option>
-                              </select>
-                          </div>
-                          <div class="col">
-                              <select class="form-control" name="endDay" required>
-                                  <option value="Senin">Senin</option>
-                                  <option value="Selasa">Selasa</option>
-                                  <option value="Rabu">Rabu</option>
-                                  <option value="Kamis">Kamis</option>
-                                  <option value="Jumat">Jumat</option>
-                                  <option value="Sabtu">Sabtu</option>
-                                  <option value="Minggu">Minggu</option>
-                              </select>
-                          </div>
-                      </div>
+                      <label>Jawaban</label>
+                      <textarea name="question" rows="7" class="form-control" placeholder="Jawaban"
+                        required></textarea>
                     </div>
-                  
-                    <div class="form-group">
-                        <label for="jamRange">Rentang Jam Buka-Tutup</label>
-                        <div class="row">
-                            <div class="col">
-                                <input type="time" class="form-control" name="jamBuka" required>
-                            </div>
-                            <div class="col">
-                                <input type="time" class="form-control" name="jamTutup" required>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    <div class="form-group">
-                        <label for="linkMaps">Link Maps</label>
-                        <input type="text" class="form-control" name="map" placeholder="Link Maps" required />
-                    </div>
-                         
                     <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
-                    <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Outlet'); ?>">Batal</a>
+                    <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('FAQ'); ?>">Batal</a>
                   </form>
                 </div>
               </div>
             </div>
-                      
+
           </div>
         </div>
         <!-- content-wrapper ends -->
@@ -201,7 +167,8 @@
         <footer class="footer">
           <div class="d-flex justify-content-center">
             <span class="text-muted text-center">
-              &copy; <script> document.write(new Date().getFullYear()) </script> PT. Loer Group Jaya. All rights reserved.
+              &copy;
+              <script> document.write(new Date().getFullYear()) </script> PT. Loer Group Jaya. All rights reserved.
             </span>
           </div>
         </footer>
@@ -225,6 +192,9 @@
   <script src="<?php echo base_url() . 'js/jsa/todolist.js' ?>"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
+  <!-- Tambahkan pustaka TinyMCE -->
+<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
   <!-- End custom js for this page-->
 </body>
 

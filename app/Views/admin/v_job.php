@@ -81,12 +81,13 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
 
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Dashboard'); ?>">
               <iconify-icon icon="heroicons:window" class="menu-icon"></iconify-icon>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+
 
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Job'); ?>">
@@ -98,7 +99,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Pendaftar');?>">
+            <a class="nav-link" href="<?php echo site_url('Pendaftar'); ?>">
               <iconify-icon icon="fluent:people-team-24-filled" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Pendaftar</span>
             </a>
@@ -115,6 +116,13 @@
             <a class="nav-link" href="<?php echo site_url('Outlet'); ?>">
               <iconify-icon icon="fa-solid:store" style="font-size: 20px;" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Outlet</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('FAQ'); ?>">
+              <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Data FAQ</span>
             </a>
           </li>
 

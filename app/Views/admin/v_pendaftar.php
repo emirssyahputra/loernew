@@ -81,12 +81,13 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
 
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Dashboard'); ?>">
               <iconify-icon icon="heroicons:window" class="menu-icon"></iconify-icon>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+
 
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Job'); ?>">
@@ -115,6 +116,13 @@
             <a class="nav-link" href="<?php echo site_url('Outlet'); ?>">
               <iconify-icon icon="fa-solid:store" style="font-size: 20px;" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Outlet</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('FAQ'); ?>">
+              <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Data FAQ</span>
             </a>
           </li>
 
@@ -153,7 +161,7 @@
                     class="btn btn-danger btn-icon-text openDeleteAllRejectPopup">
                     <i class="fa fa-trash btn-icon-prepend"></i> Hapus Semua Data Rejected
                   </button>
-                  
+
                   <div class="table-responsive">
                     <br><br>
                     <table class="table table-hover">
@@ -262,46 +270,46 @@
         <!-- partial -->
 
         <<!-- Pop-up konfirmasi -->
-        <div class="popup" id="deletePopup">
-          <div class="popup-content">
-            <div class="popup-header">
-              <span class="popup-close" id="closeDeletePopup">
-                <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
-              </span>
-            </div>
-            <div class="popup-body">
-              <p>Apakah Anda yakin ingin menghapus pendaftar?</p>
-            </div>
-            <div class="popup-footer">
-              <button class="btn btn-accept" id="confirmDelete">Ya</button>
-              <button class="btn btn-danger" id="cancelDelete">Tidak</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pop-up konfirmasi untuk Hapus Semua Data Reject -->
-        <div class="popup" id="deleteAllRejectPopup">
-          <div class="popup-content">
-            <div class="popup-header">
-              <span class="popup-close" id="closeDeleteAllRejectPopup">
-                <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
-              </span>
-            </div>
-            <div class="popup-body">
-              <p>Apakah Anda yakin ingin menghapus semua data yang ditolak?</p>
-            </div>
-            <div class="popup-footer">
-              <button class="btn btn-accept" id="confirmDeleteAllReject">Ya</button>
-              <button class="btn btn-danger" id="cancelDeleteAllReject">Tidak</button>
+          <div class="popup" id="deletePopup">
+            <div class="popup-content">
+              <div class="popup-header">
+                <span class="popup-close" id="closeDeletePopup">
+                  <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
+                </span>
+              </div>
+              <div class="popup-body">
+                <p>Apakah Anda yakin ingin menghapus pendaftar?</p>
+              </div>
+              <div class="popup-footer">
+                <button class="btn btn-accept" id="confirmDelete">Ya</button>
+                <button class="btn btn-danger" id="cancelDelete">Tidak</button>
+              </div>
             </div>
           </div>
-        </div>
+
+          <!-- Pop-up konfirmasi untuk Hapus Semua Data Reject -->
+          <div class="popup" id="deleteAllRejectPopup">
+            <div class="popup-content">
+              <div class="popup-header">
+                <span class="popup-close" id="closeDeleteAllRejectPopup">
+                  <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
+                </span>
+              </div>
+              <div class="popup-body">
+                <p>Apakah Anda yakin ingin menghapus semua data yang ditolak?</p>
+              </div>
+              <div class="popup-footer">
+                <button class="btn btn-accept" id="confirmDeleteAllReject">Ya</button>
+                <button class="btn btn-danger" id="cancelDeleteAllReject">Tidak</button>
+              </div>
+            </div>
+          </div>
       </div>
 
-      </div>
-      <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
   </div>
 
   <!-- container-scroller -->
