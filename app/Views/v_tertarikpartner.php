@@ -133,7 +133,7 @@
 
                     <div class="col-lg-5 mt-5 mt-lg-0">
                         <div id="page-slider" class="page-slider small-bg">
-                            <div class="item special-height" style="background-image:url(images/slider-partner/INFO.jpg); position: relative; min-height: 703px;">
+                            <div class="item special-height" style="background-image:url(images/slider-partner/INFO.jpg); position: relative; min-height: 643px;">
                                 <div class="container">
                                     <div class="box-slider-content">    
                                     </div>
