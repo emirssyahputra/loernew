@@ -81,12 +81,13 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
 
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Dashboard'); ?>">
               <iconify-icon icon="heroicons:window" class="menu-icon"></iconify-icon>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+
 
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Job'); ?>">
@@ -118,6 +119,13 @@
             </a>
           </li>
 
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('FAQ'); ?>">
+              <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Data FAQ</span>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- PANEL MENU KIRI [END] -->
@@ -130,17 +138,30 @@
             <div class="col-xl-13 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
+
                   <h4 class="card-title nav-item" id="teksDouble">DATA PENDAFTAR</h4>
+
                   <form action="<?= site_url('Pendaftar'); ?>" method="post">
-                    <div class="input-group">
-                      <div class="input-group-prepend" id="navbar-search-icon">
-                        <span class="input-group-text" id="search">
-                          <i class="icon-search"></i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Cari Pendaftar" name="pencarian">
-                    </div>
+                    <ul class="navbar-nav">
+                      <li class="nav-item nav-search">
+                        <div class="input-group">
+                          <div class="input-group-prepend" id="navbar-search-icon">
+                            <span class="input-group-text" id="search">
+                              <i class="icon-search"></i>
+                            </span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Cari Pendaftar" name="pencarian">
+                        </div>
+                      </li>
+                    </ul>
                   </form>
+
+                  <br>
+                  <button type="button" title="Hapus Semua Data Reject"
+                    class="btn btn-danger btn-icon-text openDeleteAllRejectPopup">
+                    <i class="fa fa-trash btn-icon-prepend"></i> Hapus Semua Data Rejected
+                  </button>
+
                   <div class="table-responsive">
                     <br><br>
                     <table class="table table-hover">
@@ -178,7 +199,7 @@
                             $status = 0;
                           }
 
-                          if ($status_adm == null && $status_wwc == null && $status_uji == null && $status_akhir == null) {
+                          if ($status_adm == 2 || $status_wwc == 2 || $status_uji == 2 || $status_akhir == 2) {
                             $delete = 1;
                           } else {
                             $delete = 0;
@@ -247,27 +268,48 @@
           </div>
         </footer>
         <!-- partial -->
-        <!-- Pop-up konfirmasi -->
-        <div class="popup" id="deletePopup">
-          <div class="popup-content">
-            <div class="popup-header">
-              <span class="popup-close" id="closeDeletePopup">
-                <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
-              </span>
-            </div>
-            <div class="popup-body">
-              <p>Apakah Anda yakin ingin menghapus pendaftar?</p>
-            </div>
-            <div class="popup-footer">
-              <button class="btn btn-accept" id="confirmDelete">Ya</button>
-              <button class="btn btn-danger" id="cancelDelete">Tidak</button>
+
+        <<!-- Pop-up konfirmasi -->
+          <div class="popup" id="deletePopup">
+            <div class="popup-content">
+              <div class="popup-header">
+                <span class="popup-close" id="closeDeletePopup">
+                  <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
+                </span>
+              </div>
+              <div class="popup-body">
+                <p>Apakah Anda yakin ingin menghapus pendaftar?</p>
+              </div>
+              <div class="popup-footer">
+                <button class="btn btn-accept" id="confirmDelete">Ya</button>
+                <button class="btn btn-danger" id="cancelDelete">Tidak</button>
+              </div>
             </div>
           </div>
-        </div>
+
+          <!-- Pop-up konfirmasi untuk Hapus Semua Data Reject -->
+          <div class="popup" id="deleteAllRejectPopup">
+            <div class="popup-content">
+              <div class="popup-header">
+                <span class="popup-close" id="closeDeleteAllRejectPopup">
+                  <iconify-icon icon="heroicons:x-mark-solid"></iconify-icon>
+                </span>
+              </div>
+              <div class="popup-body">
+                <p>Apakah Anda yakin ingin menghapus semua data yang ditolak?</p>
+              </div>
+              <div class="popup-footer">
+                <button class="btn btn-accept" id="confirmDeleteAllReject">Ya</button>
+                <button class="btn btn-danger" id="cancelDeleteAllReject">Tidak</button>
+              </div>
+            </div>
+          </div>
       </div>
-      <!-- main-panel ends -->
+
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
   </div>
 
   <!-- container-scroller -->
@@ -285,19 +327,20 @@
   <script src="<?php echo base_url() . 'js/jsa/sort.js' ?>"></script>
   <script src="<?php echo base_url() . 'js/jsa/popout.js' ?>"></script>
   <script>
-    // Fungsi untuk menampilkan pop-up konfirmasi
     function showDeleteConfirmation(id) {
       document.getElementById("confirmDelete").setAttribute("data-id", id);
       document.getElementById("deletePopup").style.display = "block";
     }
 
-    // Event listener untuk tombol "Hapus"
-    const deleteButtons = document.querySelectorAll(".btn.btn-danger");
-    deleteButtons.forEach((button) => {
+    function showDeleteAllRejectConfirmation() {
+      document.getElementById("deleteAllRejectPopup").style.display = "block";
+    }
+
+    // Event listener untuk tombol "Hapus" pada data pendaftar
+    document.querySelectorAll(".btn.btn-danger.openDeletePopup").forEach(button => {
       button.addEventListener("click", function (e) {
         e.preventDefault(); // Untuk mencegah tindakan default pada tautan
-        const id = this.getAttribute("data-id");
-        showDeleteConfirmation(id);
+        showDeleteConfirmation(this.getAttribute("data-id"));
       });
     });
 
@@ -307,7 +350,6 @@
       window.location.href = "<?= site_url('Pendaftar/hapus/'); ?>" + id_form;
     });
 
-
     // Event listener untuk tombol "Tidak" pada pop-up konfirmasi
     document.getElementById("cancelDelete").addEventListener("click", function () {
       document.getElementById("deletePopup").style.display = "none";
@@ -316,6 +358,27 @@
     // Event listener untuk tombol "Tutup" pada pop-up konfirmasi
     document.getElementById("closeDeletePopup").addEventListener("click", function () {
       document.getElementById("deletePopup").style.display = "none";
+    });
+
+    // Event listener untuk tombol "Hapus Semua Data Reject"
+    document.querySelector(".openDeleteAllRejectPopup").addEventListener("click", function (e) {
+      e.preventDefault(); // Mencegah tindakan default pada tautan
+      showDeleteAllRejectConfirmation();
+    });
+
+    // Event listener untuk tombol "Ya" pada pop-up konfirmasi semua data reject
+    document.getElementById("confirmDeleteAllReject").addEventListener("click", function () {
+      window.location.href = "<?= site_url('Pendaftar/hapus_Semua_Reject/'); ?>";
+    });
+
+    // Event listener untuk tombol "Tidak" pada pop-up konfirmasi semua data reject
+    document.getElementById("cancelDeleteAllReject").addEventListener("click", function () {
+      document.getElementById("deleteAllRejectPopup").style.display = "none";
+    });
+
+    // Event listener untuk tombol "Tutup" pada pop-up konfirmasi semua data reject
+    document.getElementById("closeDeleteAllRejectPopup").addEventListener("click", function () {
+      document.getElementById("deleteAllRejectPopup").style.display = "none";
     });
   </script>
   <!-- endinject -->

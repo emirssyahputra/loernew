@@ -110,6 +110,13 @@ function topFunction() {
               <span class="menu-title">Data Outlet</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('FAQ');?>">
+              <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Data FAQ</span>
+            </a>
+          </li>
           
         </ul>
       </nav>
