@@ -118,7 +118,18 @@
               <span class="menu-title">Data Outlet</span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('Harga'); ?>">
+              <iconify-icon icon="ion:pricetags-outline" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Harga Partnership</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('Mitra'); ?>">
+              <iconify-icon icon="mdi:partnership-outline" style="font-size: 24px;" class="menu-icon"></iconify-icon>
+              <span class="menu-title">Data Mitra</span>
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('FAQ'); ?>">
               <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>

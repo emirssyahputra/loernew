@@ -38,6 +38,7 @@ $routes->add('UbahPengguna/(:num)', 'UbahPengguna::index/$1');
 $routes->add('UbahOutlet/(:num)', 'UbahOutlet::index/$1');
 $routes->get('UbahJob/(:segment)', 'UbahJob::index/$1');
 $routes->get('UbahFAQ/(:num)', 'UbahFAQ::index/$1');
+$routes->get('UbahHarga/(:num)', 'UbahHarga::index/$1');
 $routes->get('DetailPendaftar/(:segment)', 'DetailPendaftar::index/$1');
 $routes->get('UbahStatusPendaftar/(:segment)', 'UbahStatusPendaftar::index/$1');
 $routes->get('file/(:segment)', 'DetailPendaftar::downloadFile/$1');
