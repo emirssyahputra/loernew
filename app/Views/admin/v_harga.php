@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Data FAQ</title>
+    <title>Kelola Harga Partnership</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="<?= base_url('vendors/font-awesome/css/font-awesome.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('vendors/feather/feather.css'); ?>">
@@ -154,14 +154,14 @@
                             <div class="card">
                                 <div class="card-body">
 
-                                    <h4 class="card-title nav-item" id="teksDouble">DATA FAQ (Frequently Asked Question)
+                                    <h4 class="card-title nav-item" id="teksDouble">Kelola Harga Partnership
                                     </h4>
                                     <a class="btn btn-info btn-rounded btn-fw float-left"
-                                        href="<?php echo site_url('TambahFAQ'); ?>"><i
+                                        href="<?php echo site_url('TambahHarga'); ?>"><i
                                             class="fa fa-plus btn-icon-prepend">
                                         </i> Tambah </a>
 
-                                    <form action="<?= site_url('FAQ/search'); ?>" method="post">
+                                    <form action="<?= site_url('Harga/search'); ?>" method="post">
                                         <ul class="navbar-nav">
                                             <li class="nav-item nav-search">
                                                 <div class="input-group">
@@ -172,7 +172,7 @@
                                                         </span>
                                                     </div>
                                                     <input type="text" class="form-control"
-                                                        placeholder="Cari Pertanyaan/Jawaban" name="pencarian">
+                                                        placeholder="Cari Nama Harga Partnership" name="pencarian">
                                                 </div>
                                             </li>
                                         </ul>
@@ -184,16 +184,18 @@
                                             <thead>
                                                 <tr>
                                                     <th>No <i class="fa fa-sort" onclick="sortTable(0)"></i></th>
-                                                    <th>Ask <i class="fa fa-sort" onclick="sortTable(1)"></i></th>
-                                                    <th>Question <i class="fa fa-sort" onclick="sortTable(2)"></i></th>
+                                                    <th>Nama <i class="fa fa-sort" onclick="sortTable(1)"></i></th>
+                                                    <th>Detail <i class="fa fa-sort" onclick="sortTable(2)"></i></th>
+                                                    <th>Harga <i class="fa fa-sort" onclick="sortTable(3)"></i></th>
                                                     <th>Aksi</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($faq as $index => $p):
-                                                    $id_faq = $p['id_faq'];
-                                                    $ask = $p['ask'];
-                                                    $question = $p['question'];
+                                                <?php foreach ($harga as $index => $p):
+                                                    $id_harga = $p['id_harga'];
+                                                    $nama = $p['nama'];
+                                                    $detail = $p['detail'];
+                                                    $harga = $p['harga'];
                                                     ;
                                                     ?>
                                                     <tr>
@@ -201,21 +203,24 @@
                                                             <?= $index + 1 ?>
                                                         </td>
                                                         <td>
-                                                            <?= $ask ?>
+                                                            <?= $nama ?>
                                                         </td>
                                                         <td>
-                                                            <?= $question ?>
+                                                            <?= $detail ?>
+                                                        </td>
+                                                        <td>
+                                                            <?= $harga ?>
                                                         </td>
                                                         <td align="left">
-                                                            <a href="<?= site_url('UbahFAQ/' . $id_faq); ?>" type="button"
+                                                            <a href="<?= site_url('UbahHarga/' . $id_harga); ?>" type="button"
                                                                 title="Ubah Data" class="btn btn-warning btn-icon-text">
                                                                 <i class="fa fa-pencil btn-icon-append"></i> Ubah
                                                             </a>
 
                                                             &nbsp;&nbsp;&nbsp;
                                                             <!-- Button untuk membuka pop-up -->
-                                                            <a href="<?php echo site_url('FAQ/hapus/' . $id_faq); ?>"
-                                                                type="button" data-id="<?= $id_faq ?>" title="Hapus Data"
+                                                            <a href="<?php echo site_url('Harga/hapus/' . $id_harga); ?>"
+                                                                type="button" data-id="<?= $id_harga ?>" title="Hapus Data"
                                                                 class="btn btn-danger btn-icon-text" id="openDeletePopup1">
                                                                 <i class="fa fa-trash btn-icon-prepend"></i> Hapus
                                                             </a>
@@ -252,7 +257,7 @@
                             </span>
                         </div>
                         <div class="popup-body">
-                            <p>Apakah Anda yakin ingin menghapus FAQ ini?</p>
+                            <p>Apakah Anda yakin ingin menghapus Harga ini?</p>
                         </div>
                         <div class="popup-footer">
                             <button class="btn btn-accept" id="confirmDelete">Ya</button>
@@ -299,8 +304,8 @@
         // Event listener untuk tombol "Ya" pada pop-up konfirmasi
         document.getElementById("confirmDelete").addEventListener("click", function () {
             const id = this.getAttribute("data-id");
-            const id_faq = document.getElementById("confirmDelete").getAttribute("data-id");
-            window.location.href = "<?= site_url('faq/hapus/'); ?>" + id_faq;
+            const id_harga = document.getElementById("confirmDelete").getAttribute("data-id");
+            window.location.href = "<?= site_url('Harga/hapus/'); ?>" + id_harga;
         });
 
 

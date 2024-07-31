@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Ubah Data Lowongan</title>
+  <title>Ubah Harga Partnership</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="<?= base_url('vendors/font-awesome/css/font-awesome.min.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('vendors/feather/feather.css'); ?>">
@@ -147,44 +147,30 @@
             <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Ubah Data Lowongan</h4>
-                  <form class="forms-sample" method="POST" action="<?= site_url('UbahJob/updateJob'); ?>">
+                  <h4 class="card-title">Ubah Harga Partnership</h4>
+                  <form class="forms-sample" method="POST" action="<?= site_url('UbahHarga/update'); ?>">
+                    <input type="hidden" name="id_harga" value="<?= $harga['id_harga'] ?>"> <!-- Add this line -->
+
                     <div class="form-group">
-                      <input type="hidden" name="id_loker" value="<?= $job['id_loker'] ?>">
-                      <label>Lowongan</label>
-                      <select class="form-control" name="Name">
-                        <option value="">Pilih Lowongan</option>
-                        <option value="BARISTA" <?= ($job['Nama'] === 'BARISTA') ? 'selected' : '' ?>>BARISTA</option>
-                        <option value="CASHIER" <?= ($job['Nama'] === 'CASHIER') ? 'selected' : '' ?>>CASHIER</option>
-                        <option value="COOK & COOK HELPER" <?= ($job['Nama'] === 'COOK & COOK HELPER') ? 'selected' : '' ?>>COOK & COOK HELPER</option>
-                        <option value="FINANCE" <?= ($job['Nama'] === 'FINANCE') ? 'selected' : '' ?>>FINANCE</option>
-                        <option value="ACCOUNTING" <?= ($job['Nama'] === 'ACCOUNTING') ? 'selected' : '' ?>>ACCOUNTING
-                        </option>
-                        <option value="PURCHASING" <?= ($job['Nama'] === 'PURCHASING') ? 'selected' : '' ?>>PURCHASING
-                        </option>
-                      </select>
-                      <div class="form-group">
-                        <label>Job Desk</label>
-                        <textarea name="jobdesk" rows="7" class="form-control"
-                          placeholder="Job Desk"><?= $job['jobdesk'] ?></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label>Kualifikasi</label>
-                        <textarea name="kualifikasi" rows="7" class="form-control"
-                          placeholder="Kualifikasi"><?= $job['kualifikasi'] ?></textarea>
-                      </div>
-                      <p>Periode Pendaftaran</p>
-                      <div class="form-group">
-                        <label>Awal</label>
-                        <input type="date" class="form-control" name="waktu_mulai" value="<?= $job['waktu_mulai'] ?>">
-                      </div>
-                      <div class="form-group">
-                        <label>Akhir</label>
-                        <input type="date" class="form-control" name="waktu_akhir" value="<?= $job['waktu_akhir'] ?>">
-                      </div>
-                      <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
-                      <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Job'); ?>">Batal</a>
+                      <label for="exampleInputUsername1">Nama</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['nama'] ?>" name="nama" placeholder="Nama"
+                        required />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Detail</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['detail'] ?>" name="detail"
+                        placeholder="Detail" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Harga</label>
+                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="<?= $harga['harga'] ?>" name="harga"
+                       required />
+                    </div>
+
+                    <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
+                    <a class="btn btn-danger btn-icon-text" href="<?= site_url('Harga'); ?>">Batal</a>
                   </form>
+
                 </div>
               </div>
             </div>
