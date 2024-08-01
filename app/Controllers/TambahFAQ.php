@@ -37,6 +37,6 @@ class TambahFAQ extends BaseController
 
         $model->insert($faqData);
 
-        return redirect()->to(site_url('faq'));
+        return redirect()->to(site_url('FAQ'));
     }
 }
