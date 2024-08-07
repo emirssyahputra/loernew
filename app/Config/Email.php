@@ -28,17 +28,17 @@ class Email extends BaseConfig
     /**
      * SMTP Server Address
      */
-    public string $SMTPHost = 'mail.loergroup.com';
+    public string $SMTPHost = 'loergroup.com';
 
     /**
      * SMTP Username
      */
-    public string $SMTPUser = 'nadya@loergroup.com';
+    public string $SMTPUser = 'no-reply@loergroup.com';
 
     /**
      * SMTP Password
      */
-    public string $SMTPPass = 'admin123klj!';
+    public string $SMTPPass = '-igUP3SsdSBE';
 
     /**
      * SMTP Port
@@ -62,7 +62,7 @@ class Email extends BaseConfig
      *             to the server. 'ssl' means implicit SSL. Connection on port
      *             465 should set this to ''.
      */
-    public string $SMTPCrypto = 'ssl';
+    public string $SMTPCrypto = '';
 
     /**
      * Enable word-wrap

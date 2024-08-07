@@ -162,8 +162,8 @@
                         <option value="CASHIER">CASHIER</option>
                         <option value="COOK & COOK HELPER">COOK & COOK HELPER</option>
                         <option value="FINANCE">FINANCE</option>
-                        <option value="ACCOUNTING">ACCOUNTING</option>
-                        <option value="PURCHASING">PURCHASING</option>
+                        <option value="MARKETING">MARKETING</option>
+                        <option value="BACK OFFICE">BACK OFFICE</option>
                       </select>
                     </div>
                     <div class="form-group">

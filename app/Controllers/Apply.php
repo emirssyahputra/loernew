@@ -130,7 +130,7 @@ class Apply extends BaseController
 
         $email = service('email');
         $email->setTo($data['email']);
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $email->setSubject($subject);
         $email->setMessage($message);
         $email->send();

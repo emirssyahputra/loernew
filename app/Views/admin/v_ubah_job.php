@@ -158,9 +158,9 @@
                         <option value="CASHIER" <?= ($job['Nama'] === 'CASHIER') ? 'selected' : '' ?>>CASHIER</option>
                         <option value="COOK & COOK HELPER" <?= ($job['Nama'] === 'COOK & COOK HELPER') ? 'selected' : '' ?>>COOK & COOK HELPER</option>
                         <option value="FINANCE" <?= ($job['Nama'] === 'FINANCE') ? 'selected' : '' ?>>FINANCE</option>
-                        <option value="ACCOUNTING" <?= ($job['Nama'] === 'ACCOUNTING') ? 'selected' : '' ?>>ACCOUNTING
+                        <option value="MARKETING" <?= ($job['Nama'] === 'MARKETING') ? 'selected' : '' ?>>MARKETING
                         </option>
-                        <option value="PURCHASING" <?= ($job['Nama'] === 'PURCHASING') ? 'selected' : '' ?>>PURCHASING
+                        <option value="BACK OFFICE" <?= ($job['Nama'] === 'BACK OFFICE') ? 'selected' : '' ?>>BACK OFFICE
                         </option>
                       </select>
                       <div class="form-group">

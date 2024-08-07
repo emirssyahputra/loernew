@@ -56,7 +56,7 @@ class UbahStatusPendaftar extends BaseController
 
         $email = service('email');
         $email->setTo($emailPendaftar);
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $email->setSubject($subject);
         $email->setMessage($message);
         $email->send();
@@ -95,7 +95,7 @@ class UbahStatusPendaftar extends BaseController
 
         $email = service('email');
         $email->setTo($emailPendaftar);
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $email->setSubject($subject);
         $email->setMessage($message);
         $email->send();
@@ -133,7 +133,7 @@ class UbahStatusPendaftar extends BaseController
 
         $email = service('email');
         $email->setTo($emailPendaftar);
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $email->setSubject($subject);
         $email->setMessage($message);
         $email->send();
@@ -170,7 +170,7 @@ class UbahStatusPendaftar extends BaseController
 
         $email = service('email');
         $email->setTo($emailPendaftar);
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $email->setSubject($subject);
         $email->setMessage($message);
         $email->send();

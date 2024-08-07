@@ -29,7 +29,7 @@ class Lupa extends BaseController
 
         $email = service('email');
         $email->setTo($userEmail); 
-        $email->setFrom('nadya@loergroup.com', 'Loer Group No Reply'); 
+        $email->setFrom('no-reply@loergroup.com', 'Loer Group No Reply'); 
         $email->setSubject($subject);
         $email->setMessage($message);
 

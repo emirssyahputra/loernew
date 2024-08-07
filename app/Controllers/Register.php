@@ -126,7 +126,7 @@ class Register extends BaseController
         $emailService = service('email');
 
         $emailService->setTo($email);
-        $emailService->setFrom('nadya@loergroup.com', 'Loer Group No Reply');
+        $emailService->setFrom('no-reply@loergroup.com', 'Loer Group No Reply');
         $emailService->setSubject('Register Code OTP');
         $emailService->setMessage('Kode OTP anda adalah : ' . $otpCode);
 
