@@ -51,16 +51,20 @@
 
                                 <div id="navbar-collapse" class="collapse navbar-collapse">
                                     <ul class="nav navbar-nav ml-auto align-items-center">
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('/'); ?>">Home</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="<?php echo site_url('/'); ?>">Home</a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Career'); ?>">Career</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="<?php echo site_url('Career'); ?>">Career</a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('About'); ?>">About</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="<?php echo site_url('About'); ?>">About</a></li>
 
-                                        <li class="nav-item"><a class="nav-link" href="<?php echo site_url('Partnership');?>">Partner</a></li>
+                                        <li class="nav-item"><a class="nav-link"
+                                                href="<?php echo site_url('Partnership'); ?>">Partner</a></li>
 
                                         <li class="header-get-a-quote">
-                                        <a class="btn btn-primary" href="<?php echo site_url('Login'); ?>">LOGIN</a>
+                                            <a class="btn btn-primary" href="<?php echo site_url('Login'); ?>">LOGIN</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -68,9 +72,9 @@
                         </div>
                     </div>
                 </div>
-            </div>   
+            </div>
         </header>
-        
+
         <div id="banner-area" class="banner-area" style="background-image:url(images/banner/banner1.jpg)">
             <div class="banner-text">
                 <div class="container">
@@ -90,36 +94,50 @@
                 <div class="row">
                     <div class="col-lg-7 mt-7 mt-lg-0">
                         <div class="registration-form">
-                            <form action="#" method="post" enctype="multipart/form-data">
+                            <?php if (session()->getFlashdata('success')): ?>
+                                <script>
+                                    alert("<?= session()->getFlashdata('success') ?>");
+                                </script>
+                            <?php endif; ?>
+
+                            <?php if (session()->getFlashdata('error')): ?>
+                                <script>
+                                    alert("<?= session()->getFlashdata('error') ?>");
+                                </script>
+                            <?php endif; ?>
+                            <form action="TertarikPartner/save" method="post" enctype="multipart/form-data">
                                 <h5 style="color: #000; margin-bottom: 15px;">Personal Information</h5>
 
                                 <div class="form-group">
                                     <label for="email" class="required-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email@gmail.com" required>
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="nama" class="required-label">Nama</label>
-                                    <input type="text" class="form-control" id="nama" name="Nama Lengkap" required>
+                                    <input type="text" class="form-control" id="nama" name="nama" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="telepon" class="required-label">Nomor HP</label>
-                                    <input type="tel" class="form-control" id="telepon" name="no_telp" required>
+                                    <input type="tel" class="form-control" id="telepon" name="hp" required>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="alamat" class="required-label">Alamat</label>
-                                    <textarea class="form-control" id="alamat" name="alamat" rows="2" required></textarea>
+                                    <textarea class="form-control" id="alamat" name="alamat" rows="2"
+                                        required></textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="pekerjaan" class="required-label">Pekerjaan</label>
-                                    <input type="pekerjaan" class="form-control" id="pekerjaan" name="pekerjaan" required>
+                                    <input type="pekerjaan" class="form-control" id="pekerjaan" name="pekerjaan"
+                                        required>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="info" class="required-label">Darimakanah anda mengetahui informasi mengenai kemitraan Kopi Loer?</label>
+                                    <label for="info" class="required-label">Darimakanah anda mengetahui informasi
+                                        mengenai kemitraan Kopi Loer?</label>
                                     <textarea class="form-control" id="info" name="info" rows="4" required></textarea>
                                 </div>
 
@@ -133,9 +151,10 @@
 
                     <div class="col-lg-5 mt-5 mt-lg-0">
                         <div id="page-slider" class="page-slider small-bg">
-                            <div class="item special-height" style="background-image:url(images/slider-partner/INFO.jpg); position: relative; min-height: 643px;">
+                            <div class="item special-height"
+                                style="background-image:url(images/slider-partner/INFO.jpg); position: relative; min-height: 643px;">
                                 <div class="container">
-                                    <div class="box-slider-content">    
+                                    <div class="box-slider-content">
                                     </div>
                                 </div>
                             </div>
@@ -177,9 +196,9 @@
                         <div class="col-lg-2 col-md-6 mt-5 mt-lg-0 footer-widget">
                             <h3 class="widget-title">Brands</h3>
                             <ul class="list-arrow">
-                              <p>Kopi Loer</p>
-                              <p>Rumah Loer</p>
-                              <p>KORA Coffee</p>
+                                <p>Kopi Loer</p>
+                                <p>Rumah Loer</p>
+                                <p>KORA Coffee</p>
                             </ul>
                         </div>
                     </div>
@@ -209,7 +228,7 @@
                 </div>
             </div>
         </footer>
-
+        
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <!-- Javascript Files -->

@@ -156,7 +156,7 @@
 
                                     <h4 class="card-title nav-item" id="teksDouble">Data Mitra
                                     </h4>
-                                    
+
 
                                     <form action="<?= site_url('Mitra/search'); ?>" method="post">
                                         <ul class="navbar-nav">
@@ -168,8 +168,8 @@
                                                             <i class="icon-search"></i>
                                                         </span>
                                                     </div>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Cari Mitra" name="pencarian">
+                                                    <input type="text" class="form-control" placeholder="Cari Mitra"
+                                                        name="pencarian">
                                                 </div>
                                             </li>
                                         </ul>
@@ -209,25 +209,26 @@
                                                             <?= $hp ?>
                                                         </td>
                                                         <td align="left">
-                                                            <a href="<?= site_url('Mitradetail/' . $id_mitra); ?>" type="button"
-                                                                title="Ubah Data" class="btn btn-warning btn-icon-text">
+                                                            <a href="<?= site_url('Mitradetail/' . $id_mitra); ?>"
+                                                                type="button" title="Ubah Data"
+                                                                class="btn btn-warning btn-icon-text">
                                                                 <i class="fa fa-info-circle btn-icon-append"></i> Detail
                                                             </a>
 
-                                                            &nbsp;&nbsp;&nbsp;                                                            
+                                                            &nbsp;&nbsp;&nbsp;
                                                             <?php
-                                                        // Ambil nomor mitra dari database
-                                                        $nomor_mitra = $p['hp'];
+                                                            // Ambil nomor mitra dari database
+                                                            $nomor_mitra = $p['hp'];
 
-                                                        // Ubah format nomor jika dimulai dengan "08" menjadi "+62"
-                                                        if (substr($nomor_mitra, 0, 2) === '08') {
-                                                            $nomor_mitra = '+62' . substr($nomor_mitra, 1); // Ganti "08" dengan "+62"
-                                                        }
-                                                        // Buat link WhatsApp
-                                                        $link_whatsapp = 'https://wa.me/' . $nomor_mitra;
-                                                        ?>
-                                                            <a href="<?= $link_whatsapp ?>" type="button"
-                                                                title="Ubah Data" class="btn btn-success btn-icon-text">
+                                                            // Ubah format nomor jika dimulai dengan "08" menjadi "+62"
+                                                            if (substr($nomor_mitra, 0, 2) === '08') {
+                                                                $nomor_mitra = '+62' . substr($nomor_mitra, 1); // Ganti "08" dengan "+62"
+                                                            }
+                                                            // Buat link WhatsApp
+                                                            $link_whatsapp = 'https://wa.me/' . $nomor_mitra;
+                                                            ?>
+                                                            <a href="<?= $link_whatsapp ?>" type="button" title="Ubah Data"
+                                                                class="btn btn-success btn-icon-text">
                                                                 <i class="fa fa-whatsapp btn-icon-append"></i> Whatsapp
                                                             </a>
                                                             <a href="<?php echo site_url('Mitra/hapus/' . $id_mitra); ?>"
@@ -268,7 +269,7 @@
                             </span>
                         </div>
                         <div class="popup-body">
-                            <p>Apakah Anda yakin ingin menghapus Harga ini?</p>
+                            <p>Apakah Anda yakin ingin menghapus Data ini?</p>
                         </div>
                         <div class="popup-footer">
                             <button class="btn btn-accept" id="confirmDelete">Ya</button>
@@ -315,10 +316,8 @@
         // Event listener untuk tombol "Ya" pada pop-up konfirmasi
         document.getElementById("confirmDelete").addEventListener("click", function () {
             const id = this.getAttribute("data-id");
-            const id_harga = document.getElementById("confirmDelete").getAttribute("data-id");
-            window.location.href = "<?= site_url('Mitra/hapus/'); ?>" + id_mitra;
+            window.location.href = "<?= site_url('Mitra/hapus/'); ?>" + id;
         });
-
 
         // Event listener untuk tombol "Tidak" pada pop-up konfirmasi
         document.getElementById("cancelDelete").addEventListener("click", function () {

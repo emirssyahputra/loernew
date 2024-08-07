@@ -39,9 +39,9 @@ class Harga extends BaseController
     public function hapus($id_harga)
     {
         $model = new M_Harga();
-        $faq = $model->find($id_harga);
+        $harga = $model->find($id_harga);
 
-        if ($faq) {
+        if ($harga) {
             $model->deleteharga($id_harga);
             return redirect()->to(site_url('Harga'));
         } else {
