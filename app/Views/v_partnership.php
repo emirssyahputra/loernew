@@ -727,7 +727,7 @@
               </div>
 
               <div id="collapseOne<?= $index ?>" class="collapse" aria-labelledby="headingOne<?= $index ?>" data-parent="#our-values-accordion"
-                style="margin-bottom: 20px;">
+                style="margin-bottom: 20px; font-weight: normal;">
                 <div class="card-body">
                 <h6><?= $p['question']; ?></h6>
                 </div>
@@ -765,7 +765,7 @@
 
           <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
             <h3 class="widget-title">Hubungi Kami</h3>
-            <div class="working-hours">
+            <div class="working-hours" style="font-weight: normal;">
               <p>Headquarter Office Jl. Brigjen Hasan Kasim, Ruko 30A Kecamatan Kalidoni, Kota Palembang Sumatera
                 Selatan 30114.</p>
               <p>Email: kopiloergroup@gmail.com</p>
@@ -783,7 +783,7 @@
 
           <div class="col-lg-2 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Brands</h3>
-            <ul class="list-arrow">
+            <ul class="list-arrow" style="font-weight: normal;">
               <p>Kopi Loer</p>
               <p>Rumah Loer</p>
               <p>KORA Coffee</p>

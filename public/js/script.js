@@ -168,4 +168,12 @@ jQuery(function ($) {
             }
         });
     });
+    $(document).ready(function() {
+        $('.timeline-item').each(function(i) {
+            var item = $(this);
+            setTimeout(function() {
+            item.animate({ opacity: 1 }, 1000);
+            }, 300 * i);
+        });
+    });
 });

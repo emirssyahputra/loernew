@@ -151,6 +151,50 @@
       </div><!-- Container end -->
     </section><!-- Main container end -->
 
+    <section class="section lb page-section">
+      <div class="container">
+        <div class="timeline">
+          <div class="timeline__wrap">
+            <div class="timeline__items">
+              <div class="timeline__item timeline__item--2019">
+                <div class="timeline__content">
+                  <h2 style="color: #AC8362; text-align: center;">2019</h2>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Founded Coffee Shop</p>
+                  <p style="color: #212121; text-align: justify;">Pada Agustus 2019, Outlet Pertama Kopi Loer dibuka, berlokasi di Jl. Jendral Sudirman KM 3.5 Palembang.</p>
+                </div>
+              </div>
+              <div class="timeline__item timeline__item--2020">
+                <div class="timeline__content">
+                  <h2 style="color: #AC8362; text-align: center;">2020</h2>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Open New Branches</p>
+                  <p style="color: #212121;">
+                    <ul style="list-style-type: disc; margin: 0; padding-left: 20px; text-align: justify;">
+                      <li>Outlet Kedua Kopi Loer cabang Plaju berlokasi di Jl. Jendral Ahmad Yani dibuka dengan konsep Coffee To Go – hanya melayani pemesanan takeaway, Grabfood dan Gofood untuk produk minuman.</li>
+                      <li>Outlet Ketiga Kopi Loer cabang Celentang berlokasi di Jl. Brigjen Hasan Kasim 30A dibuka dengan konsep Ruko Outlet, tersedia seating dine-in dengan menu minuman dan cemilan.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__item timeline__item--2021">
+                <div class="timeline__content">
+                  <h2 style="color: #AC8362; text-align: center;">2021</h2>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Open a New Branch</p>
+                  <p style="color: #212121; text-align: justify;">Outlet Rumah Loer berlokasi di Jl. Merdeka No.349 dibuka, adalah outlet dengan pengembangan konsep Kopi Loer yang lebih eksklusif.</p>
+                </div>
+              </div>
+              <div class="timeline__item timeline__item--2024">
+                <div class="timeline__content">
+                  <h2 style="color: #AC8362; text-align: center;">2024</h2>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">The Story About</p>
+                  <p style="color: #212121; text-align: justify;">Setelah lima tahun beroperasional, Loer Group siap untuk mengembangkan operasinya ke banyak daerah di Indonesia.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <section id="ts-features" class="ts-features">
   <div class="container">
@@ -274,6 +318,15 @@
 
     <!-- Template custom -->
     <script src="<?php echo base_url() . 'js/script.js' ?>"></script>
+    <script src="<?php echo base_url() . 'js/timeline.min.js'?>"></script>
+    <script>
+      timeline(document.querySelectorAll('.timeline'), {
+        forceVerticalMode: 991,
+        mode: 'horizontal',
+        verticalStartPosition: 'left',
+        visibleItems: 4
+      });
+    </script>
 
   </div><!-- Body inner end -->
 </body>
