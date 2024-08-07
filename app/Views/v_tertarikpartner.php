@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="banner-heading">
-                                <h1 class="banner-title" style="font-size: 42px;">Saya Tertarik Menjadi Partner</h1>
+                                <h1 class="banner-title" style="font-size: 36px;">Saya Tertarik Menjadi Partner</h1>
                             </div>
                         </div>
                     </div>
