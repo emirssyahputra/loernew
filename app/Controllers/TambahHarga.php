@@ -36,14 +36,13 @@ class TambahHarga extends BaseController
     // Menghapus karakter selain angka
     $hargaNumerik = preg_replace('/\D/', '', $hargaInput);
 
-    // Format ke dalam Rupiah dan tambahkan ,- di akhir
-    $hargaFormatted = "Rp " . number_format($hargaNumerik, 0, ',', '.') . ',-';
 
     // Menggabungkan semua data ke dalam array
     $hargadata = [
         'nama' => $this->request->getPost('nama'),
         'detail' => $this->request->getPost('detail'),
-        'harga' => $hargaFormatted,  // Menyimpan harga yang sudah diformat
+        'harga' => $hargaNumerik,  // Menyimpan harga yang sudah diformat
+        'estimasi' => $this->request->getPost('estimasi'),
     ];
 
     // Menyimpan data ke database

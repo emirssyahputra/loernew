@@ -164,12 +164,19 @@
                     <div class="form-group">
                       <label for="exampleInputUsername1">Detail</label>
                       <input type="text" class="form-control" id="exampleInputUsername1" name="detail"
-                        placeholder="Detail" required />
+                        placeholder="Detail" />
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Harga</label>
                       <input type="text" class="form-control" id="exampleInputUsername1" name="harga"
                         placeholder="Harga" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="estimasi">Apakah harga tersebut estimasi?</label>
+                      <select class="form-control" id="estimasi" name="estimasi" required>
+                        <option value="Tidak">Tidak</option>
+                        <option value="Ya">Ya</option>
+                      </select>
                     </div>
                     <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     <a class="btn btn-danger btn-icon-text" href="<?php echo site_url('Harga'); ?>">Batal</a>

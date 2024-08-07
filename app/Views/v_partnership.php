@@ -526,11 +526,12 @@
                   Mulai Dari Rp. 350 Juta </h1>
               </div>
             </div>
+            <?php foreach ($harga as $hargaa): ?>
             <div class="row" style="margin-bottom: 15px;">
               <div class="col-md-6">
                 <div class="ts-service-box">
                   <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Biaya Layanan</strong><br>Survey dan Training</h6>
+                    <h6 class="service-box-title"><strong><?= $hargaa['nama'] ?></strong><br><?= $hargaa['detail'] ?></h6>
                   </div>
                 </div>
               </div>
@@ -538,83 +539,13 @@
               <div class="col-md-6">
                 <div class="ts-service-box">
                   <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Rp 5.000.000.-</strong><br></h6>
+                    <h6 class="service-box-title"><strong>Rp <?= number_format($hargaa['harga'], 0, ',', '.') ?>.-</strong><br><?= $hargaa['estimasi'] == 'Ya' ? 'Estimasi' : '' ?></h6>
                   </div>
                 </div>
               </div>
             </div>
+            <?php endforeach; ?>
 
-            <div class="row" style="margin-bottom: 15px;">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Partnership Fee</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Rp 30.000.000.-</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="margin-bottom: 15px;">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Biaya Renovasi</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Rp 150.000.000.-</strong><br>(Estimasi)</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="margin-bottom: 15px;">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Biaya Pembelian Peralatan dan Mesin</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Rp 180.000.000.-</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="margin-bottom: 15px;">
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Biaya Pre-Opening Cost</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="ts-service-box">
-                  <div class="ts-service-box-content">
-                    <h6 class="service-box-title"><strong>Rp 10.000.000.-</strong><br></h6>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <div class="row text-center">
               <div class="col-12">
@@ -636,12 +567,11 @@
               <div class="col-md-6">
                 <div class="ts-service-box">
                   <div class="ts-service-box-content">
-                    <h6 class="service-box-title" style="color: #AC8362;"><strong>Rp 375.000.000.-</strong><br></h6>
+                    <h6 class="service-box-title" style="color: #AC8362;"><strong>Rp <?= number_format($totalharga, 0, ',', '.') ?>.-</strong><br></h6>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 

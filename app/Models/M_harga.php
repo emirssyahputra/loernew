@@ -7,7 +7,7 @@ class M_harga extends Model
 {
     protected $table = 'harga';
     protected $primaryKey = 'id_harga';
-    protected $allowedFields = ['nama', 'detail','harga'];
+    protected $allowedFields = ['nama', 'detail','harga','estimasi'];
 
     public function deleteharga($id_harga)
     {

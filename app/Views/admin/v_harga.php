@@ -209,7 +209,7 @@
                                                             <?= $detail ?>
                                                         </td>
                                                         <td>
-                                                            <?= $harga ?>
+                                                            Rp <?= number_format($harga, 0, ',', '.') ?>.-
                                                         </td>
                                                         <td align="left">
                                                             <a href="<?= site_url('UbahHarga/' . $id_harga); ?>" type="button"

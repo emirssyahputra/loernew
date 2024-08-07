@@ -36,14 +36,12 @@ class UbahHarga extends BaseController
         // Menghapus karakter selain angka
         $hargaNumerik = preg_replace('/\D/', '', $hargaInput);
 
-        // Format ke dalam Rupiah dan tambahkan ,- di akhir
-        $hargaFormatted = "Rp " . number_format($hargaNumerik, 0, ',', '.') . ',-';
-
         $id_harga = $this->request->getPost('id_harga'); // Use getPost instead of getVar
         $data = [
             'nama' => $this->request->getPost('nama'),
             'detail' => $this->request->getPost('detail'),
-            'harga' => $hargaFormatted,  // Menyimpan harga yang sudah diformat
+            'harga' => $hargaNumerik,  // Menyimpan harga yang sudah diformat
+            'estimasi' => $this->request->getPost('estimasi'),
         ];
 
         $model->update($id_harga, $data); // No need to pass 'where' array

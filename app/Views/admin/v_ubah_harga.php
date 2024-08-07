@@ -77,41 +77,43 @@
 
     <!-- PANEL MENU KIRI [START] -->
     <div class="container-fluid page-body-wrapper">
-      <!--  partial:partials/_sidebar.html  --> 
-      <nav class="sidebar sidebar-offcanvas" id="sidebar" >
+      <!--  partial:partials/_sidebar.html  -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-    
+
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Dashboard');?>">
+            <a class="nav-link" href="<?php echo site_url('Dashboard'); ?>">
               <iconify-icon icon="heroicons:window" class="menu-icon"></iconify-icon>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-                   
-          
+
+
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Job');?>">
-              <iconify-icon icon="heroicons:list-bullet" style="font-size: 18px; border: 2px solid; border-radius: 5px; padding: 0.5px;" class="menu-icon"></iconify-icon>
+            <a class="nav-link" href="<?php echo site_url('Job'); ?>">
+              <iconify-icon icon="heroicons:list-bullet"
+                style="font-size: 18px; border: 2px solid; border-radius: 5px; padding: 0.5px;"
+                class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Lowongan</span>
             </a>
           </li>
-          
+
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Pendaftar');?>">
+            <a class="nav-link" href="<?php echo site_url('Pendaftar'); ?>">
               <iconify-icon icon="fluent:people-team-24-filled" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Pendaftar</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Pengguna');?>">
+            <a class="nav-link" href="<?php echo site_url('Pengguna'); ?>">
               <iconify-icon icon="fluent:people-edit-24-filled" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Admin</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('Outlet');?>">
+            <a class="nav-link" href="<?php echo site_url('Outlet'); ?>">
               <iconify-icon icon="fa-solid:store" style="font-size: 20px;" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data Outlet</span>
             </a>
@@ -129,15 +131,15 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url('FAQ');?>">
+            <a class="nav-link" href="<?php echo site_url('FAQ'); ?>">
               <iconify-icon icon="wpf:ask-question" style="font-size: 24px;" class="menu-icon"></iconify-icon>
               <span class="menu-title">Data FAQ</span>
             </a>
           </li>
-          
+
         </ul>
       </nav>
-    <!-- PANEL MENU KIRI [END] -->
+      <!-- PANEL MENU KIRI [END] -->
 
       <!-- partial -->
       <div class="main-panel">
@@ -153,20 +155,26 @@
 
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nama</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['nama'] ?>" name="nama" placeholder="Nama"
-                        required />
+                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['nama'] ?>"
+                        name="nama" placeholder="Nama" required />
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Detail</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['detail'] ?>" name="detail"
-                        placeholder="Detail" required />
+                      <input type="text" class="form-control" id="exampleInputUsername1" value="<?= $harga['detail'] ?>"
+                        name="detail" placeholder="Detail" />
                     </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">Harga</label>
-                      <input type="text" class="form-control" id="exampleInputUsername1" placeholder="<?= $harga['harga'] ?>" name="harga"
-                       required />
+                      <input type="text" class="form-control" id="exampleInputUsername1"
+                        placeholder="<?= $harga['harga'] ?>" name="harga" required />
                     </div>
-
+                    <div class="form-group">
+                      <label for="estimasi">Apakah harga tersebut estimasi?</label>
+                      <select class="form-control" id="estimasi" name="estimasi" required>
+                        <option value="Tidak" <?= $harga['estimasi'] == 'Tidak' ? 'selected' : '' ?>>Tidak</option>
+                        <option value="Ya" <?= $harga['estimasi'] == 'Ya' ? 'selected' : '' ?>>Ya</option>
+                      </select>
+                    </div>
                     <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>
                     <a class="btn btn-danger btn-icon-text" href="<?= site_url('Harga'); ?>">Batal</a>
                   </form>
