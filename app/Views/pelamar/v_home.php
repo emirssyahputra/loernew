@@ -88,7 +88,7 @@
 <!--/ Header end -->
 
 <div class="banner-carousel banner-carousel-1 mb-0">
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/RUMAH-LOER.jpg)">
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/RUMAH-LOER.webp)">
     <div class="slider-content text-right">
         <div class="container h-100">
           <div class="row align-items-center h-100">
@@ -102,7 +102,7 @@
     </div>
   </div>
 
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/KORA.jpg)">
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/KORA.webp)">
     <div class="slider-content text-right">
         <div class="container h-100">
           <div class="row align-items-center h-100">
@@ -116,7 +116,7 @@
     </div>
   </div>
 
-  <div class="banner-carousel-item" style="background-image:url(images/slider-main/KOPI-LOER.jpg)">
+  <div class="banner-carousel-item" style="background-image:url(images/slider-main/KOPI-LOER.webp)">
     <div class="slider-content text-right">
         <div class="container h-100">
           <div class="row align-items-center h-100">
