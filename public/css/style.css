@@ -2550,8 +2550,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 13px 15px;
-  padding-bottom: 10px;
+  padding: 13px 40px 13px 13px;
 }
 
 .accordion-group .card-header .btn:before {
