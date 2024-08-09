@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\M_Harga;
+use App\Models\M_harga;
 
 class Harga extends BaseController
 {
@@ -14,7 +14,7 @@ class Harga extends BaseController
 
         if ($sesi_pengguna_id) {
             if ($akses_pengguna == 1) {
-                $model = new M_Harga();
+                $model = new M_harga();
                 $data['harga'] = $model->findAll();
                 return view('admin/v_harga', $data);
             } else {
@@ -30,7 +30,7 @@ class Harga extends BaseController
     {
         $keyword = $this->request->getPost('pencarian');
 
-        $model = new M_Harga();
+        $model = new M_harga();
         $data['harga'] = $model->search($keyword);
 
         return view('admin/v_harga', $data);
@@ -38,7 +38,7 @@ class Harga extends BaseController
 
     public function hapus($id_harga)
     {
-        $model = new M_Harga();
+        $model = new M_harga();
         $harga = $model->find($id_harga);
 
         if ($harga) {
