@@ -95,7 +95,7 @@
     <div class="col-10" style="margin: 0 auto;">
       <div class="banner-carousel banner-carousel-1 mb-0">
         <div class="banner-carousel-item"
-          style="background-image:url(images/slider-partner/LF1.jpg); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
+          style="background-image:url(images/slider-partner/LF1.webp); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
           <div class="slider-content text-right">
             <div class="container h-100">
             </div>
@@ -103,7 +103,7 @@
         </div>
 
         <div class="banner-carousel-item"
-          style="background-image:url(images/slider-partner/LF2.jpg); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
+          style="background-image:url(images/slider-partner/LF2.webp); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
           <div class="slider-content text-right">
             <div class="container h-100">
             </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="banner-carousel-item"
-          style="background-image:url(images/slider-partner/LF3.jpg); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
+          style="background-image:url(images/slider-partner/LF3.webp); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
           <div class="slider-content text-right">
             <div class="container h-100">
             </div>
@@ -119,7 +119,7 @@
         </div>
 
         <div class="banner-carousel-item"
-          style="background-image:url(images/slider-partner/LF4.jpg); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
+          style="background-image:url(images/slider-partner/LF4.webp); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
           <div class="slider-content text-right">
             <div class="container h-100">
             </div>
@@ -127,7 +127,7 @@
         </div>
 
         <div class="banner-carousel-item"
-          style="background-image:url(images/slider-partner/LF5.jpg); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
+          style="background-image:url(images/slider-partner/LF5.webp); background-size: cover; background-position: center; height: 500px; background-repeat: no-repeat;">
           <div class="slider-content text-right">
             <div class="container h-100">
             </div>
@@ -152,7 +152,7 @@
         <div class="row">
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div id="page-slider" class="page-slider small-bg" style="margin-bottom: 75px;">
-              <div class="item" style="background-image:url(images/slider-partner/DSC02317.jpg); border-radius: 50px;">
+              <div class="item" style="background-image:url(images/slider-partner/DSC02317.webp); border-radius: 50px;">
                 <div class="container">
                   <div class="box-slider-content">
                   </div>
@@ -249,7 +249,7 @@
           </div>
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div id="page-slider" class="page-slider small-bg">
-              <div class="item" style="background-image:url(images/slider-partner/FIN_5136.jpg); border-radius: 50px;">
+              <div class="item" style="background-image:url(images/slider-partner/FIN_5136.webp); border-radius: 50px;">
                 <div class="container">
                   <div class="box-slider-content">
                   </div>
@@ -264,7 +264,7 @@
 
     <div class="banner-carousel banner-carousel-1 mb-0">
       <div class="banner-carousel-item"
-        style="background-image:url(images/slider-partner/FIN_5109.jpg); position: relative;">
+        style="background-image:url(images/slider-partner/FIN_5109.webp); position: relative;">
         <div class="overlay"
           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7);"></div>
         <div class="slider-content text-right" style="position: relative; z-index: 1;">
@@ -357,7 +357,7 @@
           <div class="col-lg-6 mt-6 mt-lg-0">
             <div id="page-slider-left" class="page-slider small-bg">
               <div class="item special-height"
-                style="background-image:url(images/slider-kopi/LF1.jpg); position: relative; margin-bottom: 20px;">
+                style="background-image:url(images/slider-kopi/LF1.webp); position: relative; margin-bottom: 20px;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -369,7 +369,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-kopi/LF2.jpg); position: relative;">
+                style="background-image:url(images/slider-kopi/LF2.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -381,7 +381,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-kopi/LF3.jpg); position: relative;">
+                style="background-image:url(images/slider-kopi/LF3.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -393,7 +393,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-kopi/LF4.jpg); position: relative;">
+                style="background-image:url(images/slider-kopi/LF4.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -405,7 +405,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-kopi/LF5.jpg); position: relative;">
+                style="background-image:url(images/slider-kopi/LF5.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -422,7 +422,7 @@
             <div id="page-slider-left" class="page-slider small-bg">
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF1.jpg); position: relative; margin-bottom: 20px;">
+                style="background-image:url(images/slider-rumah/LF1.webp); position: relative; margin-bottom: 20px;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -434,7 +434,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF2.jpg); position: relative;">
+                style="background-image:url(images/slider-rumah/LF2.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -446,7 +446,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF3.jpg); position: relative;">
+                style="background-image:url(images/slider-rumah/LF3.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -458,7 +458,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF4.jpg); position: relative;">
+                style="background-image:url(images/slider-rumah/LF4.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -470,7 +470,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF5.jpg); position: relative;">
+                style="background-image:url(images/slider-rumah/LF5.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -482,7 +482,7 @@
               </div>
 
               <div class="item special-height"
-                style="background-image:url(images/slider-rumah/LF6.jpg); position: relative;">
+                style="background-image:url(images/slider-rumah/LF6.webp); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
                     <div class="box-slider-text"
@@ -505,7 +505,7 @@
             <div id="page-slider" class="page-slider small-bg">
 
               <div class="item special-height"
-                style="background-image:url(images/slider-partner/FIN_5229.jpg); position: relative; margin-bottom: 30px;">
+                style="background-image:url(images/slider-partner/FIN_5229.webp); position: relative; margin-bottom: 30px;">
                 <div class="container">
                   <div class="box-slider-content">
                   </div>
@@ -585,7 +585,7 @@
             <div id="page-slider" class="page-slider small-bg">
 
               <div class="item special-height"
-                style="background-image:url(images/slider-partner/DSC02328.jpg); position: relative; margin-bottom: 30px;">
+                style="background-image:url(images/slider-partner/DSC02328.webp); position: relative; margin-bottom: 30px;">
                 <div class="container">
                   <div class="box-slider-content">
                   </div>

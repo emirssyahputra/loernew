@@ -116,30 +116,30 @@
           <div class="col-lg-5 mt-5 mt-lg-0">
             <div id="page-slider" class="page-slider small-bg">
 
-              <div class="item" style="background-image:url(images/slider-pages/KOPI-LOER-TIM.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/KOPI-LOER-TIM.jpg); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
-                    <div class="box-slider-text">
+                    <div class="box-slider-text" style="position: absolute; bottom: 5px; left: -185px; transform: translateY(-10%);">
                       <h2 class="box-slide-title">Kopi Loer</h2>
                     </div>
                   </div>
                 </div>
               </div><!-- Item 1 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/KORA-TIM.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/KORA-TIM.jpg); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
-                    <div class="box-slider-text">
+                    <div class="box-slider-text" style="position: absolute; bottom: 5px; left: -185px; transform: translateY(-10%);">
                       <h2 class="box-slide-title">Kora</h2>
                     </div>
                   </div>
                 </div>
               </div><!-- Item 2 end -->
 
-              <div class="item" style="background-image:url(images/slider-pages/RUMAH-LOER-TIM.jpg)">
+              <div class="item" style="background-image:url(images/slider-pages/RUMAH-LOER-TIM.jpg); position: relative;">
                 <div class="container">
                   <div class="box-slider-content">
-                    <div class="box-slider-text">
+                    <div class="box-slider-text" style="position: absolute; bottom: 5px; left: -185px; transform: translateY(-10%);">
                       <h2 class="box-slide-title">Rumah Loer</h2>
                     </div>
                   </div>
