@@ -150,7 +150,7 @@
                     </div>                  
                     <div class="form-group">
                       <label>Alamat</label>
-                      <textarea name="alamat" rows="1" class="form-control" placeholder="Alamat" ></textarea>
+                      <textarea name="alamat" rows="1" class="form-control" placeholder="Alamat"><?= htmlspecialchars($outlet['alamat']); ?></textarea>
                     </div>
 
                     <div class="form-group">
@@ -195,7 +195,7 @@
                   
                     <div class="form-group">
                         <label for="linkMaps">Link Maps</label>
-                        <input type="text" class="form-control" name="linkMaps" placeholder="Link Maps" value="<?= $outlet['map']; ?>" required />
+                        <input type="text" class="form-control" name="map" placeholder="Link Maps" value="<?= $outlet['map']; ?>" required />
                     </div>
                          
                     <button type="submit" class="btn btn-warning btn-icon-text">Simpan</button>

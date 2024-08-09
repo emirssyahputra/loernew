@@ -143,7 +143,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Tambah Outlet</h4>
-                  <form class="forms-sample" method="POST" action="<?= site_url('Tambahoutlet/saveOutlet'); ?>">
+                  <form class="forms-sample" method="POST" action="<?= site_url('TambahOutlet/saveOutlet'); ?>">
                     <div class="form-group">
                       <label for="namaoutlet">Nama Outlet</label>
                       <input type="text" class="form-control" id="outlet" name="nama" placeholder="Nama" required />

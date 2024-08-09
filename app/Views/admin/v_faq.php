@@ -300,7 +300,7 @@
         document.getElementById("confirmDelete").addEventListener("click", function () {
             const id = this.getAttribute("data-id");
             const id_faq = document.getElementById("confirmDelete").getAttribute("data-id");
-            window.location.href = "<?= site_url('faq/hapus/'); ?>" + id_faq;
+            window.location.href = "<?= site_url('FAQ/hapus/'); ?>" + id_faq;
         });
 
 

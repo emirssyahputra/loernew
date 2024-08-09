@@ -43,9 +43,9 @@ class FAQ extends BaseController
 
         if ($faq) {
             $model->deletefaq($id_faq);
-            return redirect()->to(site_url('faq'));
+            return redirect()->to(site_url('FAQ'));
         } else {
-            return redirect()->to(site_url('faq'));
+            return redirect()->to(site_url('FAQ'));
         }
     }
 }
