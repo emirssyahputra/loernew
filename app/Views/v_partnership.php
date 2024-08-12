@@ -743,8 +743,7 @@
         <div class="col-12">
           <h1 style="color: #AC8362;">Siap Untuk Menjadi Partner SEDOLOER?</h1>
           <h6>Tertarik menjadi partner kami? Konsultasikan di sini</h6>
-          <a href="https://wa.me/628877720306" class="slider btn btn-join" style="margin-bottom: 50px;">Saya Tertarik
-            Menjadi Partner</a>
+          <a href="https://wa.me/628877720306" class="slider btn btn-join" style="margin-bottom: 50px;">Saya Ingin Penjelasan Lebih Detail</a>
         </div>
       </div>
     </div>
