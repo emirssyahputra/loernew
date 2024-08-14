@@ -295,6 +295,10 @@ h6 {
     width: 185%;
     margin-left: -100px;
   }
+  .timeline__item--2021 .timeline__content {
+    width: 185%;
+    margin-left: -117px;
+  }
   .timeline__item:after {
     height: 130px;
     width: 130px;
@@ -578,7 +582,6 @@ h6 {
 }
 
 .timeline-nav-button:disabled {
-	opacity: .5;
 	pointer-events: none
 }
 

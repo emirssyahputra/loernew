@@ -108,9 +108,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
-            <p>𝑺𝑬𝑫𝑶𝑳𝑶𝑬𝑹 (P) - 𝑳𝑶𝑬𝑹 (S) - (/lur) sapaan hangat khas wong kito galo, berasal dari kata 'dulur' yang artinya saudara, sapaan dekat yang mencairkan suasana…</p>
-            <p>Berangkat dari antusiasme dan rasa cinta akan dunia kuliner, Kopi Loer hadir di pertengahan tahun 2019 dengan konsep kedai kopi kekinian yang sederhana di tengah-tengah Kota Palembang.</p>
-            <p>Satu tahun setelah Kopi Loer hadir ditengah semaraknya perkembangan dunia kuliner di Kota Palembang, Kopi Loer menerima pendanaan melalui Equity Crowd Funding (ECF) dan melakukan pengembangan dengan penambahan kedai-kedai Kopi Loer, diantaranya Kopi Loer Sudirman dan Kopi Loer Celentang. Pada penghujung tahun 2021, Loer Group melakukan pengambangan brand yaitu Rumah Loer yang hadir dan menjadi resto dengan konsep satu-kesatuan yang sarat akan budaya Palembang yang kaya, menyajikan pengalaman menikmati seduhan kopi dan hidangan makanan yang lebih berkesan.</p>
+            <p>𝑺𝑬𝑫𝑶𝑳𝑶𝑬𝑹 (P) - 𝑳𝑶𝑬𝑹 (S) - (/lur) sapaan hangat khas wong kito galo, berasal dari kata ‘dulur’ yang artinya saudara, sapaan dekat yang mencairkan suasana. Kata itupun menjadi filosofi dari brand Kopi Loer, hadir ditengah-tengah masyarakat Kota Palembang menjadi brand yang dekat dan hangat dengan keseharian penikmatnya.</p>
+            <p>Berangkat dari antusiasme dan rasa cinta akan dunia kuliner, LOER GROUP yang hadir di pertengahan tahun 2019, meluncurkan brand pertamanya yaitu Kopi Loer. Setelah satu tahun hadir ditengah semaraknya perkembangan dunia kuliner di Kota Palembang, LOER GROUP menerima pendanaan melalui Equity Crowd Funding (ECF) dan melakukan pengembangan dengan penambahan cabang outlet lainnya. Saat ini Kopi Loer tersebar di beberapa titik strategis di Kota Palembang yaitu Kopi Loer Sudirman, Kopi Loer Celentang dan Kopi Loer Plaju.</p>
+            <p>Pada tahun 2021, LOER GROUP melakukan pengembangan konsep dari Kopi Loer menjadi Rumah Loer. Rumah Loer hadir dan menjadi coffee house dengan konsep satu-kesatuan dari outlet Kopi Loer yang sudah ada dengan menyajikan pengalaman menikmati seduhan kopi dan hidangan makanan dengan sentuhan keaslian Palembang yang lebih berkesan.</p>
           </div><!-- Col end -->
 
           <div class="col-lg-5 mt-5 mt-lg-0">
@@ -159,18 +159,18 @@
               <div class="timeline__item timeline__item--2019">
                 <div class="timeline__content">
                   <h2 style="color: #AC8362; text-align: center;">2019</h2>
-                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Founded Coffee Shop</p>
-                  <p style="color: #212121; text-align: justify;">Pada Agustus 2019, Outlet Pertama Kopi Loer dibuka, berlokasi di Jl. Jendral Sudirman KM 3.5 Palembang.</p>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Pembukaan Cabang Pertama</p>
+                  <p style="color: #212121; text-align: justify;">Pada bulan Agustus 2019, Outlet Kopi Loer pertama kali di buka, berlokasi di jantung Kota Palembang di Jl. Jendral Sudirman KM 3.5.</p>
                 </div>
               </div>
               <div class="timeline__item timeline__item--2020">
                 <div class="timeline__content">
                   <h2 style="color: #AC8362; text-align: center;">2020</h2>
-                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Open New Branches</p>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Pembukaan Cabang Lanjutan</p>
                   <p style="color: #212121;">
                     <ul style="list-style-type: disc; margin: 0; padding-left: 20px; text-align: justify;">
-                      <li>Outlet Kedua Kopi Loer cabang Plaju berlokasi di Jl. Jendral Ahmad Yani dibuka dengan konsep Coffee To Go – hanya melayani pemesanan takeaway, Grabfood dan Gofood untuk produk minuman.</li>
-                      <li>Outlet Ketiga Kopi Loer cabang Celentang berlokasi di Jl. Brigjen Hasan Kasim 30A dibuka dengan konsep Ruko Outlet, tersedia seating dine-in dengan menu minuman dan cemilan.</li>
+                      <li>Cabang Outlet kedua dibuka yang berlokasi di Jl. Jendral Ahmad Yani Plaju dengan konsep Coffee To Go. Merupakan dedicated outlet untuk melayani Online Food Order (OFO) untuk merchants Grabfood, Gofood dan Shopefood.</li>
+                      <li>Cabang Outlet ketiga dibuka yang berlokasi di Jl. Brigjen Hasan Kasim 30A.</li>
                     </ul>
                   </p>
                 </div>
@@ -178,15 +178,15 @@
               <div class="timeline__item timeline__item--2021">
                 <div class="timeline__content">
                   <h2 style="color: #AC8362; text-align: center;">2021</h2>
-                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Open a New Branch</p>
-                  <p style="color: #212121; text-align: justify;">Outlet Rumah Loer berlokasi di Jl. Merdeka No.349 dibuka, adalah outlet dengan pengembangan konsep Kopi Loer yang lebih eksklusif.</p>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Pengembangan Konsep Kopi Loer</p>
+                  <p style="color: #212121; text-align: justify;">Dibukanya outlet Rumah Loer yang merupakan pengembangan konsep dari Kopi Loer. Berlokasi di Jl. Merdeka No.349, Rumah Loer berdiri dengan bangunan restorasi rumah lama (rumah panggung) yang unik dan one of a kind. Dilengkapi menu signature minuman dan makanan dengan sentuhan khas Kota Palembang, Rumah Loer menawarkan pengalaman menikmati kopi yang lebih eksklusif dari Kopi Loer.</p>
                 </div>
               </div>
               <div class="timeline__item timeline__item--2024">
                 <div class="timeline__content">
                   <h2 style="color: #AC8362; text-align: center;">2024</h2>
-                  <p style="color: #FFC130; font-weight: bold; text-align: center;">The Story About</p>
-                  <p style="color: #212121; text-align: justify;">Setelah lima tahun beroperasional, Loer Group siap untuk mengembangkan operasinya ke banyak daerah di Indonesia.</p>
+                  <p style="color: #FFC130; font-weight: bold; text-align: center;">Ready to SCALE UP</p>
+                  <p style="color: #212121; text-align: justify;">Setelah lima tahun beroperasional, LOER GROUP siap untuk melakukan ekspansi ke titik-titik strategis di Kota Palembang dan daerah di Sumatera Selatan lainnya.</p>
                 </div>
               </div>
             </div>

@@ -147,25 +147,43 @@ jQuery(function ($) {
             Latest Slider
         --------------------*/
         $(".latest__slider").owlCarousel({
-            loop: true,
-            margin: 0,
-            items: 3,
-            dots: true,
-            dotsEach: 2,
-            smartSpeed: 1200,
-            autoHeight: false,
-            autoplay: true,
-            responsive: {
-                992: {
-                    items: 2.3
-                },
-                768: {
-                    items: 2
-                },
-                320: {
-                    items: 1
-                }
+        loop: true,
+        margin: 0,
+        items: 3,
+        dots: true,
+        dotsEach: 2,
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        responsive: {
+            992: {
+            items: 2.3
+            },
+            768: {
+            items: 2
+            },
+            320: {
+            items: 1
             }
+        }
+        });
+
+        // Event listener untuk tombol panah
+        $('.prev-blog').click(function () {
+        $(this).closest('.row').find('.latest__slider').trigger('prev.owl.carousel');
+        });
+
+        $('.next-blog').click(function () {
+        $(this).closest('.row').find('.latest__slider').trigger('next.owl.carousel');
+        });
+
+        // Tambahan untuk bagian kedua
+        $('.prev-blog-2').click(function () {
+        $(this).closest('.row').find('.latest__slider').trigger('prev.owl.carousel');
+        });
+
+        $('.next-blog-2').click(function () {
+        $(this).closest('.row').find('.latest__slider').trigger('next.owl.carousel');
         });
     });
     $(document).ready(function() {

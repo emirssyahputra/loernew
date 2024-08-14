@@ -190,9 +190,9 @@
       </div><!-- Col end -->
     
       <div class="col-lg-7">
-        <p>𝑺𝑬𝑫𝑶𝑳𝑶𝑬𝑹 (P) - 𝑳𝑶𝑬𝑹 (S) - (/lur) sapaan hangat khas wong kito galo, berasal dari kata 'dulur' yang artinya saudara, sapaan dekat yang mencairkan suasana…</p>
-        <p>Berangkat dari antusiasme dan rasa cinta akan dunia kuliner, Kopi Loer hadir di pertengahan tahun 2019 dengan konsep kedai kopi kekinian yang sederhana di tengah-tengah Kota Palembang.</p>
-        <p>Satu tahun setelah Kopi Loer hadir ditengah semaraknya perkembangan dunia kuliner di Kota Palembang, Kopi Loer menerima pendanaan melalui Equity Crowd Funding (ECF) dan melakukan pengembangan dengan penambahan kedai-kedai Kopi Loer, diantaranya Kopi Loer Sudirman dan KL Celentang. Pada penghujung tahun 2021, Rumah Loer hadir dan menjadi resto dengan konsep satu-kesatuan seluruh kedai Kopi Loer yang ada, menyajikan pengalaman menikmati seduhan kopi dan hidangan makanan yang lebih berkesan.</p>
+            <p>𝑺𝑬𝑫𝑶𝑳𝑶𝑬𝑹 (P) - 𝑳𝑶𝑬𝑹 (S) - (/lur) sapaan hangat khas wong kito galo, berasal dari kata ‘dulur’ yang artinya saudara, sapaan dekat yang mencairkan suasana. Kata itupun menjadi filosofi dari brand Kopi Loer, hadir ditengah-tengah masyarakat Kota Palembang menjadi brand yang dekat dan hangat dengan keseharian penikmatnya.</p>
+            <p>Berangkat dari antusiasme dan rasa cinta akan dunia kuliner, LOER GROUP yang hadir di pertengahan tahun 2019, meluncurkan brand pertamanya yaitu Kopi Loer. Setelah satu tahun hadir ditengah semaraknya perkembangan dunia kuliner di Kota Palembang, LOER GROUP menerima pendanaan melalui Equity Crowd Funding (ECF) dan melakukan pengembangan dengan penambahan cabang outlet lainnya. Saat ini Kopi Loer tersebar di beberapa titik strategis di Kota Palembang yaitu Kopi Loer Sudirman, Kopi Loer Celentang dan Kopi Loer Plaju.</p>
+            <p>Pada tahun 2021, LOER GROUP melakukan pengembangan konsep dari Kopi Loer menjadi Rumah Loer. Rumah Loer hadir dan menjadi coffee house dengan konsep satu-kesatuan dari outlet Kopi Loer yang sudah ada dengan menyajikan pengalaman menikmati seduhan kopi dan hidangan makanan dengan sentuhan keaslian Palembang yang lebih berkesan.</p>
       </div><!-- Col end -->
     </div><!-- Content row end -->    
 

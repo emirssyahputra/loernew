@@ -17,6 +17,24 @@
   <link rel="stylesheet" href="<?= base_url('plugins/colorbox/colorbox.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('css/owl.carousel.min.css'); ?>">
+  <style>
+  @media (min-width: 992px) {
+      .timeline-nav-button--prev {
+          left: 10px;
+      }
+      .timeline-nav-button--next {
+          right: -5px;
+      }
+  }
+  @media (max-width: 991px) {
+      .timeline-nav-button--prev {
+          left: 10px;
+      }
+      .timeline-nav-button--next {
+          right: 10px;
+      }
+  }
+  </style>
 
 </head>
 
@@ -139,9 +157,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-12">
-          <h6>For our next expansion project, we are setting our sights on broadening our reach. We will be expanding
-            into more regions and new markets to enhance our overall impact. After 5 years we are now ready to
-            collaborate with YOU.<br><br>Bergabung dan tumbuh bersama menjadi <strong>Partner Sedoloer.</strong></h6>
+          <h6>We are ready to SCALE UP. Untuk rencana pengembangan outlet Kopi Loer, LOER GROUP memperluas jangkaunnya ke beberapa daerah lainnya di Kota Palembang dan Sumatera Selatan untuk meningkatkan manfaat sosial dan ekonominya secara keseluruhan. After 5 years we are now ready to collaborate with YOU. Bergabung dan tumbuh bersama menjadi <strong>Partner Sedoloer.</strong></h6>
         </div>
       </div>
     </div>
@@ -161,6 +177,12 @@
             </div>
           </div>
           <div class="col-lg-8">
+            <button class="timeline-nav-button timeline-nav-button--prev prev-blog" 
+              style="background-color: #33333; border: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10;">
+            </button>
+            <button class="timeline-nav-button timeline-nav-button--next next-blog" 
+              style="background-color: #33333; border: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10;">
+            </button>
             <h2 class="column-title text-left"
               style="margin-top: -7px; margin-bottom: 10px; color: #AC8362; display: flex; align-items: center;"> Kenapa
               Kopi Loer? <span
@@ -191,7 +213,7 @@
               </div>
               <div class="col-lg-4">
                 <div class="blog__item latest__item" style="border-radius: 30px; padding: 20px;">
-                  <h4 class="custom-h4">Financial Tranparency</h4>
+                  <h4 class="custom-h4">Financial Transparencies</h4>
                   <p>Loer Group mengedepankan transparansi dalam pengelolaan bisnis sesuai prinsip tata kelola yang baik
                     dan berkelanjutan, memberikan gambaran potensi dan risiko bisnis sejak awal hingga laporan performa
                     dalam bentuk laporan keuangan.</p>
@@ -211,6 +233,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
+            <button class="timeline-nav-button timeline-nav-button--prev prev-blog-2" 
+              style="background-color: #33333; border: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10;">
+            </button>
+            <button class="timeline-nav-button timeline-nav-button--next next-blog-2" 
+              style="background-color: #33333; border: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; z-index: 10;">
+            </button>
             <h2 class="column-title text-left"
               style="margin-top: -7px; margin-bottom: 10px; color: #AC8362; display: flex; align-items: center;">
               Komitmen Kami <span

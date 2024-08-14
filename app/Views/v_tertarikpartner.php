@@ -136,7 +136,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="info" class="required-label">Darimakanah anda mengetahui informasi
+                                    <label for="info" class="required-label">Darimanakah anda mengetahui informasi
                                         mengenai kemitraan Kopi Loer?</label>
                                     <textarea class="form-control" id="info" name="info" rows="4" required></textarea>
                                 </div>
